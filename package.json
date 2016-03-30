@@ -19,6 +19,7 @@
   "homepage": "https://github.com/barretthafner/hafnerindustries#readme",
   "dependencies": {
     "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "normalize.css": "^4.0.0"
   }
 }
