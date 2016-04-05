@@ -12,6 +12,35 @@ body {
   color: #252826;
   font-size: 1em;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background: lightgray;
+}
+
+ div, section, header, footer {
+  border: 1px solid Chocolate;
+}
+
+
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.links {
+  float: right;
+}
+
+.top-navigation .links li {
+  display: inline-block;
 }
 
 .masthead-heading,
@@ -26,6 +55,7 @@ body {
   background-image: url('https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?crop=entropy&fit=crop&fm=jpg&h=925&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1900');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 90%;
 /*  border-top: solid 1em black;*/
 
 }
@@ -59,6 +89,7 @@ body {
 
 .social > li {
   display: inline-block;
+  margin: 0 1em;
 }
 
 
@@ -83,4 +114,22 @@ body {
 
 h1 {
   color: #BF2526;
+}
+
+.social .fa {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-github:hover {
+  color: #6e7771;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
