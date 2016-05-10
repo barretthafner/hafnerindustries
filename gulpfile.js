@@ -5,8 +5,9 @@ var gulp        = require('gulp'),
     minifyHTML  = require('gulp-minify-html'),
     concat      = require('gulp-concat'),
     rename      = require('gulp-rename'),
-    neat        = require('node-neat').includePaths,
-    bourbon     = require('node-bourbon').includePaths,
+    neat        = require('node-neat'),
+    bourbon     = require('node-bourbon'),
+    refills     = require('node-refills'),
     livereload  = require('gulp-livereload');
 
 var paths = {
@@ -28,8 +29,7 @@ gulp.task('html', function() {
 gulp.task('styles', function() {
   return gulp.src(paths.scss)
     .pipe(sass({
-        includePaths: bourbon,
-        includePaths: neat
+        includePaths: [].concat(bourbon.includePaths, neat.includePaths, refills.includePaths)
     }))
     .pipe(gulp.dest('public/css'));
 });
