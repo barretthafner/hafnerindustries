@@ -8,12 +8,15 @@ var gulp        = require('gulp'),
     neat        = require('node-neat'),
     bourbon     = require('node-bourbon'),
     refills     = require('node-refills'),
-    livereload  = require('gulp-livereload');
+    livereload  = require('gulp-livereload'),
+    less        = require('gulp-less'),
+    path        = require('path');
 
 var paths = {
     index:  './site/index.html',
     js:     './site/js/**/*.js',
     scss:   './site/scss/*.scss',
+    less:   './site/less/**/*.less',
     img:    './site/img/**',
 };
 
@@ -30,6 +33,14 @@ gulp.task('styles', function() {
   return gulp.src(paths.scss)
     .pipe(sass({
         includePaths: [].concat(bourbon.includePaths, neat.includePaths, refills.includePaths)
+    }))
+    .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('less', function () {
+  return gulp.src(paths.less)
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(gulp.dest('public/css'));
 });
