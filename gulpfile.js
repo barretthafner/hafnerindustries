@@ -1,15 +1,9 @@
 var gulp        = require('gulp'),
+    concat      = require('gulp-concat'),
     jshint      = require('gulp-jshint'),
+    minifyHTML  = require('gulp-minify-html'),
     sass        = require('gulp-sass'),
     uglify      = require('gulp-uglify'),
-    minifyHTML  = require('gulp-minify-html'),
-    concat      = require('gulp-concat'),
-    rename      = require('gulp-rename'),
-    neat        = require('node-neat'),
-    bourbon     = require('node-bourbon'),
-    refills     = require('node-refills'),
-    livereload  = require('gulp-livereload'),
-    less        = require('gulp-less'),
     path        = require('path');
 
 var paths = {
@@ -31,17 +25,7 @@ gulp.task('html', function() {
 // Compile Sass task
 gulp.task('styles', function() {
   return gulp.src(paths.scss)
-    .pipe(sass({
-        includePaths: [].concat(bourbon.includePaths, neat.includePaths, refills.includePaths)
-    }))
-    .pipe(gulp.dest('public/css'));
-});
-
-gulp.task('less', function () {
-  return gulp.src(paths.less)
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
+    .pipe(sass({}))
     .pipe(gulp.dest('public/css'));
 });
 
@@ -69,7 +53,6 @@ gulp.task('images', function() {
 
 // Watch task
 gulp.task('watch', function() {
-  livereload.listen({basePath: 'build' });
   gulp.watch(paths.index, ['html']);
   gulp.watch(paths.js, ['jshint', 'scripts']);
   gulp.watch(paths.scss, ['styles']);
