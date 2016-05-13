@@ -8,18 +8,18 @@
     Brown: #57442D
 */
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Roboto;
-  -webkit-font-smoothing: antialiased;
-}
+//html {
+//  box-sizing: border-box;
+//}
+//
+//*, *:before, *:after {
+//  box-sizing: inherit;
+//}
+//
+//body {
+//  font-family: Roboto;
+//  -webkit-font-smoothing: antialiased;
+//}
 
 body {
   /* Typography Declarations */
@@ -72,7 +72,6 @@ ol, ul {
 .masthead {
   color: #252826;
   padding: 4rem 0 6rem 0;
-  background-color: purple;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 90%;

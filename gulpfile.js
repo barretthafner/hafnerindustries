@@ -18,7 +18,7 @@ var paths = {
 // Minify index
 gulp.task('html', function() {
   return gulp.src(paths.index)
-//    .pipe(minifyHTML())
+    .pipe(minifyHTML())
     .pipe(gulp.dest('public/'));
 });
 
@@ -49,7 +49,6 @@ gulp.task('images', function() {
   return gulp.src(paths.img)
     .pipe(gulp.dest('public/img'));
 });
-
 
 // Watch task
 gulp.task('watch', function() {
