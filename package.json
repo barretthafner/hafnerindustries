@@ -17,7 +17,7 @@
   },
   "homepage": "http://www.hafnerindustries.com",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
