@@ -1,4 +1,3 @@
-@import url(../../node_modules/normalize.css/normalize.css);
 /*
   Colors:
     Red: #BF2526
@@ -6,6 +5,16 @@
     Black: #252826
     Brown: #57442D
 */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: Roboto;
+  -webkit-font-smoothing: antialiased; }
+
 body {
   /* Typography Declarations */
   color: #252826;
