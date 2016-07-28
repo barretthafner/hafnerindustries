@@ -1,15 +1,12 @@
 var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
-    jshint      = require('gulp-jshint'),
     minifyHTML  = require('gulp-minify-html'),
-    sass        = require('gulp-sass'),
     uglify      = require('gulp-uglify'),
     path        = require('path');
 
 var paths = {
     index:  './site/index.html',
-    js:     './site/js/**/*.js',
-    scss:   './site/scss/*.scss',
+    css:   './site/scss/*.scss',
     less:   './site/less/**/*.less',
     img:    './site/img/**',
 };
