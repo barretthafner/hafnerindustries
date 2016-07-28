@@ -1,14 +1,16 @@
+'use strict';
+
 var gulp        = require('gulp'),
-    concat      = require('gulp-concat'),
+    webpack     = require('webpack-stream'),
     minifyHTML  = require('gulp-minify-html'),
+    sass        = require('gulp-sass'),
     uglify      = require('gulp-uglify'),
     path        = require('path');
 
 var paths = {
-    index:  './site/index.html',
-    css:   './site/scss/*.scss',
-    less:   './site/less/**/*.less',
-    img:    './site/img/**',
+    index:  './src/index.html',
+    sass:    './src/sass/**/*.scss',
+    img:    './src/img/**/*',
 };
 
 
@@ -16,22 +18,21 @@ var paths = {
 gulp.task('html', function() {
   return gulp.src(paths.index)
     .pipe(minifyHTML())
-    .pipe(gulp.dest('public/'));
+    .pipe(gulp.dest('dist/'));
 });
 
 // Compile Sass task
 gulp.task('styles', function() {
-  return gulp.src(paths.scss)
-    .pipe(sass({}))
-    .pipe(gulp.dest('public/css'));
+  return gulp.src(paths.sass)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/css'));
 });
 
-// JavaScript build task, removes whitespace and concatenates all files
-gulp.task('scripts', function() {
-  return gulp.src(paths.js)
-    .pipe(concat('scripts.js'))
+gulp.task('webpack', function() {
+  return gulp.src('src/index.jsx')
+    .pipe(webpack( require('./webpack.config.js') ))
     .pipe(uglify())
-    .pipe(gulp.dest('public/js'));
+    .pipe(gulp.dest('dist/'))
 });
 
 // JavaScript linting task
