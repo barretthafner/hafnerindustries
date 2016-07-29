@@ -6,9 +6,10 @@ var filename = [packageData.name, 'js'];
 
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.jsx'),
+  entry: path.resolve(__dirname, 'src/app/index.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "dist/",
     filename: filename.join('.')
   },
   module: {
@@ -24,6 +25,7 @@ module.exports = {
       }
     ]
   },
+  plugins: [],
   resolve: {
     extensions: ['', '.js', '.jsx']
   }

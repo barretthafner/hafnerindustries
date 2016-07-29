@@ -1,0 +1,124 @@
+/*
+  Colors:
+    Red: #BF2526
+    Blue: #2A7B89
+    Black: #252826
+    Brown: #57442D
+*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: Roboto;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  /* Typography Declarations */
+  color: #252826;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif; }
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+ol, ul {
+  list-style: none; }
+
+.content {
+  text-align: center; }
+
+/* Navigation Section */
+.top-navigation {
+  background-color: #fff; }
+
+.top-navigation > .content {
+  width: 970px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0px 15px; }
+
+.logo {
+  height: 100%; }
+
+.links {
+  float: right; }
+
+.top-navigation .links li {
+  display: inline-block; }
+
+.masthead,
+.content-footer {
+  text-align: center; }
+
+.masthead {
+  color: #252826;
+  padding: 4rem 0 1rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 90%; }
+
+.masthead-intro {
+  margin-bottom: 0.1rem;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 4rem; }
+
+.masthead-heading {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6.5rem;
+  letter-spacing: -0.01rem;
+  text-transform: uppercase;
+  color: #BF2526; }
+
+.introduction-section,
+.location-section,
+.questions-section {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem; }
+
+.social {
+  padding: 0; }
+
+.social li {
+  display: inline-block;
+  margin: 0 1rem; }
+
+.introduction-section > p,
+.location-section > p,
+footer .content p {
+  /* Typography Declarations */
+  font-weight: 300;
+  letter-spacing: 0.05rem; }
+
+.questions-section > h2 {
+  /* Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* Layout Declarations */
+  margin-top: 2rem; }
+
+.social {
+  padding: 1rem 0 0 0; }
+  .social .fa {
+    font-size: 5rem;
+    text-decoration: none; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-github:hover {
+  color: #6e7771; }
+
+@media only screen and (max-width: 670px) {
+  .masthead-heading {
+    font-size: 3em; }
+  section {
+    padding: 0 1.75rem; } }
