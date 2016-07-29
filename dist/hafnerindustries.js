@@ -64,6 +64,22 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var contentData = {
+	  MiddleBoxes: [{
+	    title: "Custom Apps",
+	    description: "Examples of different custom apps that I have built",
+	    icon: "mobile"
+	  }, {
+	    title: "Plugins",
+	    description: "Examples of plugins for various purposes",
+	    icon: "th-large"
+	  }, {
+	    title: "Fun Stuff",
+	    description: "Some fun, random projects",
+	    icon: "rocket"
+	  }]
+	};
+	
 	document.addEventListener('DOMContentLoaded', function () {
 	  _reactDom2.default.render(_react2.default.createElement(Main, null), document.getElementById('app'));
 	});
@@ -191,11 +207,12 @@
 	            _react2.default.createElement(
 	              'h2',
 	              { className: 'content-head is-center' },
-	              'Excepteur sint occaecat cupidatat.'
+	              'Work Samples'
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'pure-g' },
+	              _react2.default.createElement(MiddleBox, { title: 'Custom Apps', description: 'new description', icon: 'rocket' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
@@ -475,6 +492,41 @@
 	  }]);
 	
 	  return Splash;
+	}(_react2.default.Component);
+	
+	;
+	
+	var MiddleBox = function (_React$Component6) {
+	  _inherits(MiddleBox, _React$Component6);
+	
+	  function MiddleBox(props) {
+	    _classCallCheck(this, MiddleBox);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(MiddleBox).call(this, props));
+	  }
+	
+	  _createClass(MiddleBox, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'content-subhead' },
+	          _react2.default.createElement('i', { className: "fa fa-" + this.props.icon }),
+	          this.props.title
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.props.description
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return MiddleBox;
 	}(_react2.default.Component);
 	
 	;

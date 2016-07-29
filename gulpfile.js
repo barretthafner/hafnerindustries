@@ -43,7 +43,7 @@ gulp.task('build', ['html', 'styles', 'images', 'webpack']);
 // Watch task
 gulp.task('watch', function() {
   gulp.watch(paths.index, ['html']);
-  gulp.watch(paths.scss, ['styles']);
+  gulp.watch(paths.sass, ['styles']);
   gulp.watch(paths.img, ['images']);
   gulp.watch(paths.app, ['webpack'])
 });

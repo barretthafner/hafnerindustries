@@ -1,6 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const contentData = {
+  MiddleBoxes: [
+    {
+      title: "Custom Apps",
+      description: "Examples of different custom apps that I have built",
+      icon: "mobile"
+    },
+    {
+      title: "Plugins",
+      description: "Examples of plugins for various purposes",
+      icon: "th-large"
+    },
+    {
+      title: "Fun Stuff",
+      description: "Some fun, random projects",
+      icon: "rocket"
+    },
+
+  ]
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
     <Main />,
@@ -66,9 +87,12 @@ class NewLayout extends React.Component {
 
       <div className="content-wrapper">
           <div className="content">
-              <h2 className="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+              <h2 className="content-head is-center">Work Samples</h2>
 
               <div className="pure-g">
+
+                  < MiddleBox title="Custom Apps" description="new description" icon="rocket" />
+
                   <div className="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
                       <h3 className="content-subhead">
@@ -215,6 +239,25 @@ class Splash extends React.Component {
             <a href="http://purecss.io" className="pure-button pure-button-primary">Get Started</a>
           </p>
         </div>
+      </div>
+    );
+  }
+};
+
+class MiddleBox extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div className="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+        <h3 className="content-subhead">
+          <i className={ "fa fa-" + this.props.icon }></i>
+          {this.props.title}
+        </h3>
+        <p>
+          {this.props.description}
+        </p>
       </div>
     );
   }
