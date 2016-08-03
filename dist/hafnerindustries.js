@@ -101,7 +101,7 @@
 	        null,
 	        _react2.default.createElement(Header, null),
 	        _react2.default.createElement(Splash, null),
-	        _react2.default.createElement(NewLayout, null)
+	        _react2.default.createElement(NewLayout, { content: contentData })
 	      );
 	    }
 	  }]);
@@ -140,39 +140,6 @@
 	            { className: 'masthead-heading' },
 	            'Hafner Industries'
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { className: 'text' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'The website is under construction.'
-	          ),
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Please come again soon!'
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Until then, say hi to me on these social networks:'
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'social' },
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('a', { className: 'fa fa-github', href: 'https://github.com/barretthafner' })
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement('a', { className: 'fa fa-twitter', href: 'https://twitter.com/barretthafner' })
-	            )
-	          )
 	        )
 	      );
 	    }
@@ -197,185 +164,11 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'content-wrapper' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'content' },
-	            _react2.default.createElement(
-	              'h2',
-	              { className: 'content-head is-center' },
-	              'Work Samples'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pure-g' },
-	              _react2.default.createElement(MiddleBox, { title: 'Custom Apps', description: 'new description', icon: 'rocket' }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  { className: 'content-subhead' },
-	                  _react2.default.createElement('i', { className: 'fa fa-rocket' }),
-	                  'Get Started Quickly'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  { className: 'content-subhead' },
-	                  _react2.default.createElement('i', { className: 'fa fa-mobile' }),
-	                  'Responsive Layouts'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  { className: 'content-subhead' },
-	                  _react2.default.createElement('i', { className: 'fa fa-th-large' }),
-	                  'Modular'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
-	                _react2.default.createElement(
-	                  'h3',
-	                  { className: 'content-subhead' },
-	                  _react2.default.createElement('i', { className: 'fa fa-check-square-o' }),
-	                  'Plays Nice'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.'
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'ribbon l-box-lrg pure-g' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5' },
-	              _react2.default.createElement('img', { className: 'pure-img-responsive', alt: 'File Icons', width: '300', src: 'img/common/file-icons.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pure-u-1 pure-u-md-1-2 pure-u-lg-3-5' },
-	              _react2.default.createElement(
-	                'h2',
-	                { className: 'content-head content-head-ribbon' },
-	                'Laboris nisi ut aliquip.'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'content' },
-	            _react2.default.createElement(
-	              'h2',
-	              { className: 'content-head is-center' },
-	              'Dolore magna aliqua. Uis aute irure.'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'pure-g' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box-lrg pure-u-1 pure-u-md-2-5' },
-	                _react2.default.createElement(
-	                  'form',
-	                  { className: 'pure-form pure-form-stacked' },
-	                  _react2.default.createElement(
-	                    'fieldset',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      { htmlFor: 'name' },
-	                      'Your Name'
-	                    ),
-	                    _react2.default.createElement('input', { id: 'name', type: 'text', placeholder: 'Your Name' }),
-	                    _react2.default.createElement(
-	                      'label',
-	                      { htmlFor: 'email' },
-	                      'Your Email'
-	                    ),
-	                    _react2.default.createElement('input', { id: 'email', type: 'email', placeholder: 'Your Email' }),
-	                    _react2.default.createElement(
-	                      'label',
-	                      { htmlFor: 'password' },
-	                      'Your Password'
-	                    ),
-	                    _react2.default.createElement('input', { id: 'password', type: 'password', placeholder: 'Your Password' }),
-	                    _react2.default.createElement(
-	                      'button',
-	                      { type: 'submit', className: 'pure-button' },
-	                      'Sign Up'
-	                    )
-	                  )
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'l-box-lrg pure-u-1 pure-u-md-3-5' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  null,
-	                  'Contact Us'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-	                ),
-	                _react2.default.createElement(
-	                  'h4',
-	                  null,
-	                  'More Information'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'footer l-box is-center' },
-	            'View the source of this layout to learn more. Made with love by the YUI Team.'
-	          )
-	        )
+	        { className: 'content-wrapper' },
+	        _react2.default.createElement(WorkSamples, { content: this.props.content }),
+	        _react2.default.createElement(Bio, null),
+	        _react2.default.createElement(Contact, null),
+	        _react2.default.createElement(Footer, null)
 	      );
 	    }
 	  }]);
@@ -406,14 +199,14 @@
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'pure-menu-heading', href: '' },
-	            'Your Site'
+	            'Hafner Industries'
 	          ),
 	          _react2.default.createElement(
 	            'ul',
 	            { className: 'pure-menu-list' },
 	            _react2.default.createElement(
 	              'li',
-	              { className: 'pure-menu-item pure-menu-selected' },
+	              { className: 'pure-menu-item' },
 	              _react2.default.createElement(
 	                'a',
 	                { href: '#', className: 'pure-menu-link' },
@@ -426,7 +219,7 @@
 	              _react2.default.createElement(
 	                'a',
 	                { href: '#', className: 'pure-menu-link' },
-	                'Tour'
+	                'Work'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -435,7 +228,7 @@
 	              _react2.default.createElement(
 	                'a',
 	                { href: '#', className: 'pure-menu-link' },
-	                'Sign Up'
+	                'Contact'
 	              )
 	            )
 	          )
@@ -467,15 +260,18 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'splash' },
+	          _react2.default.createElement('img', { height: '200', src: 'img/hi_logo.svg' }),
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'splash-head' },
-	            'Big Bold Text'
+	            'Welcome to ',
+	            _react2.default.createElement('br', null),
+	            ' Hafner Industries'
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'splash-subhead' },
-	            'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+	            'A porfolio site showcasing my work.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -483,7 +279,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'http://purecss.io', className: 'pure-button pure-button-primary' },
-	              'Get Started'
+	              'Contact Me'
 	            )
 	          )
 	        )
@@ -496,21 +292,57 @@
 	
 	;
 	
-	var MiddleBox = function (_React$Component6) {
-	  _inherits(MiddleBox, _React$Component6);
+	var WorkSamples = function (_React$Component6) {
+	  _inherits(WorkSamples, _React$Component6);
 	
-	  function MiddleBox(props) {
-	    _classCallCheck(this, MiddleBox);
+	  function WorkSamples(props) {
+	    _classCallCheck(this, WorkSamples);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(MiddleBox).call(this, props));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WorkSamples).call(this, props));
 	  }
 	
-	  _createClass(MiddleBox, [{
+	  _createClass(WorkSamples, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4' },
+	        { className: 'content' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'content-head is-center' },
+	          'Work Samples'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pure-g' },
+	          this.props.content.MiddleBoxes.map(function (item) {
+	            return _react2.default.createElement(SampleBox, { title: item.title, description: item.description, icon: item.icon });
+	          })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return WorkSamples;
+	}(_react2.default.Component);
+	
+	;
+	
+	var SampleBox = function (_React$Component7) {
+	  _inherits(SampleBox, _React$Component7);
+	
+	  function SampleBox(props) {
+	    _classCallCheck(this, SampleBox);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SampleBox).call(this, props));
+	  }
+	
+	  _createClass(SampleBox, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3' },
 	        _react2.default.createElement(
 	          'h3',
 	          { className: 'content-subhead' },
@@ -526,7 +358,139 @@
 	    }
 	  }]);
 	
-	  return MiddleBox;
+	  return SampleBox;
+	}(_react2.default.Component);
+	
+	;
+	
+	var Bio = function (_React$Component8) {
+	  _inherits(Bio, _React$Component8);
+	
+	  function Bio(props) {
+	    _classCallCheck(this, Bio);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Bio).call(this, props));
+	  }
+	
+	  _createClass(Bio, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'ribbon l-box-lrg pure-g' },
+	        _react2.default.createElement('div', { className: 'l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pure-u-1 pure-u-md-1-2 pure-u-lg-3-5' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'content-head content-head-ribbon' },
+	            'Bio.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'This is where the Bio goes.'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Bio;
+	}(_react2.default.Component);
+	
+	var Contact = function (_React$Component9) {
+	  _inherits(Contact, _React$Component9);
+	
+	  function Contact(props) {
+	    _classCallCheck(this, Contact);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Contact).call(this, props));
+	  }
+	
+	  _createClass(Contact, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'content' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'content-head is-center' },
+	          'Contact'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pure-g' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'l-box-lrg pure-u-1 pure-u-md-3-5' },
+	            _react2.default.createElement(
+	              'section',
+	              { className: 'text' },
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'The website is under construction.'
+	              ),
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                'Please come again soon!'
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                'Until then, say hi to me on these social networks:'
+	              ),
+	              _react2.default.createElement(
+	                'ul',
+	                { className: 'social' },
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('a', { className: 'fa fa-github', href: 'https://github.com/barretthafner' })
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('a', { className: 'fa fa-twitter', href: 'https://twitter.com/barretthafner' })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Contact;
+	}(_react2.default.Component);
+	
+	;
+	
+	var Footer = function (_React$Component10) {
+	  _inherits(Footer, _React$Component10);
+	
+	  function Footer(props) {
+	    _classCallCheck(this, Footer);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).call(this, props));
+	  }
+	
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'footer l-box is-center' },
+	        'Copyright Hafner Industries, LLC 2016'
+	      );
+	    }
+	  }]);
+	
+	  return Footer;
 	}(_react2.default.Component);
 	
 	;

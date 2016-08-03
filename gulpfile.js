@@ -6,6 +6,7 @@ var gulp          = require('gulp'),
     cleanCSS      = require('gulp-clean-css'),
     autoprefixer  = require('gulp-autoprefixer'),
     sass          = require('gulp-sass'),
+    livereload    = require('gulp-livereload'),
     path          = require('path');
 
 var webpack          = require('webpack'),
@@ -42,10 +43,11 @@ gulp.task('build', ['html', 'styles', 'images', 'webpack']);
 
 // Watch task
 gulp.task('watch', function() {
+  livereload.listen();
   gulp.watch(paths.index, ['html']);
   gulp.watch(paths.sass, ['styles']);
   gulp.watch(paths.img, ['images']);
-  gulp.watch(paths.app, ['webpack'])
+  gulp.watch(paths.app, ['webpack']);
 });
 
 
@@ -57,7 +59,8 @@ gulp.task('html', function() {
   console.log(productionEnv);
   return gulp.src(paths.index)
     .pipe(gulpif(productionEnv, minify()))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('dist/'))
+    .pipe(livereload());
 });
 
 // Compile Sass task
@@ -69,14 +72,16 @@ gulp.task('styles', function() {
       cascade: false
     }))
     .pipe(gulpif(productionEnv, cleanCSS()))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'))
+    .pipe(livereload());
 });
 
 
 // Move Images task
 gulp.task('images', function() {
   return gulp.src(paths.img)
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('dist/img'))
+    .pipe(livereload());
 });
 
 
@@ -106,4 +111,5 @@ gulp.task('webpack', function() {
   return gulp.src('src/index.jsx')
     .pipe(webpackStream(myConfig))
     .pipe(gulp.dest('dist/'))
+    .pipe(livereload());
 });
