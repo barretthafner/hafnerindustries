@@ -7,6 +7,7 @@ var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     sass          = require('gulp-sass'),
     livereload    = require('gulp-livereload'),
+    plumber       = require('gulp-plumber'),
     path          = require('path');
 
 var webpack          = require('webpack'),
@@ -55,9 +56,8 @@ gulp.task('watch', function() {
 
 // Minify index
 gulp.task('html', function() {
-  console.log(process.argv);
-  console.log(productionEnv);
   return gulp.src(paths.index)
+    .pipe(plumber())
     .pipe(gulpif(productionEnv, minify()))
     .pipe(gulp.dest('dist/'))
     .pipe(livereload());
@@ -66,6 +66,7 @@ gulp.task('html', function() {
 // Compile Sass task
 gulp.task('styles', function() {
   return gulp.src(paths.sass)
+    .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -80,6 +81,7 @@ gulp.task('styles', function() {
 // Move Images task
 gulp.task('images', function() {
   return gulp.src(paths.img)
+    .pipe(plumber())
     .pipe(gulp.dest('dist/img'))
     .pipe(livereload());
 });
@@ -109,6 +111,7 @@ gulp.task('webpack', function() {
   }
 
   return gulp.src('src/index.jsx')
+    .pipe(plumber())
     .pipe(webpackStream(myConfig))
     .pipe(gulp.dest('dist/'))
     .pipe(livereload());
