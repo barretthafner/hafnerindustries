@@ -15,7 +15,7 @@ class Splash extends React.Component {
             A porfolio site showcasing my work.
           </p>
           <p>
-            <a href="http://purecss.io" className="pure-button pure-button-primary">Contact Me</a>
+            <a href="#" className="pure-button pure-button-primary">Contact Me</a>
           </p>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
@@ -32,10 +32,10 @@ class Bio extends React.Component {
   render() {
     return (
       <div className="ribbon l-box-lrg pure-g">
-        <div className="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-          <img src="img/me_circle.png" height="200"/>
+        <div className="l-box-lrg is-center pure-u-1 pure-u-sm-1-2 pure-u-lg-2-5">
+          <img className="pure-img-responsive" src="img/me_circle.png"/>
         </div>
-        <div className="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <div className="pure-u-1 pure-u-sm-1-2 pure-u-lg-3-5">
           <h2 className="content-head content-head-ribbon">Bio.</h2>
           <p>
             This is where the Bio goes.

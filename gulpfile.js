@@ -42,7 +42,7 @@ var paths = {
 gulp.task('default', ['build', 'watch']);
 
 // Build task
-gulp.task('build', ['html', 'styles', 'images', 'webpack']);
+gulp.task('build', ['clean', 'html', 'styles', 'images', 'webpack']);
 
 // Watch task
 gulp.task('watch', function() {
@@ -54,7 +54,7 @@ gulp.task('watch', function() {
 });
 
  gulp.task('clean', function() {
-  del(['dist']);
+  del.sync(['dist']);
 });
 
 // Build tasks  -------------------------------------------------------------------
@@ -97,7 +97,7 @@ gulp.task('images', function() {
 
 // Webpack -------------------------------------------------------------------
 
-gulp.task('webpack', ['clean'], function() {
+gulp.task('webpack', function() {
 
   var myConfig = Object.create(webpackConfig);
   if (productionEnv) {
