@@ -3,11 +3,13 @@
 var gulp          = require('gulp'),
     gulpif        = require('gulp-if'),
     minify        = require('gulp-minify-html'),
+    imagemin      = require('gulp-imagemin'),
     cleanCSS      = require('gulp-clean-css'),
     autoprefixer  = require('gulp-autoprefixer'),
     sass          = require('gulp-sass'),
     livereload    = require('gulp-livereload'),
     plumber       = require('gulp-plumber'),
+    del           = require('del'),
     path          = require('path');
 
 var webpack          = require('webpack'),
@@ -51,6 +53,9 @@ gulp.task('watch', function() {
   gulp.watch(paths.app, ['webpack']);
 });
 
+ gulp.task('clean', function() {
+  del(['dist']);
+});
 
 // Build tasks  -------------------------------------------------------------------
 
@@ -82,6 +87,7 @@ gulp.task('styles', function() {
 gulp.task('images', function() {
   return gulp.src(paths.img)
     .pipe(plumber())
+    .pipe(gulpif(productionEnv, imagemin({optimizationLevel: 5})))
     .pipe(gulp.dest('dist/img'))
     .pipe(livereload());
 });
@@ -91,7 +97,7 @@ gulp.task('images', function() {
 
 // Webpack -------------------------------------------------------------------
 
-gulp.task('webpack', function() {
+gulp.task('webpack', ['clean'], function() {
 
   var myConfig = Object.create(webpackConfig);
   if (productionEnv) {
