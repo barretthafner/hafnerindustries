@@ -1,4 +1,6 @@
 /* Position and sizing of burger button */
+// need a high z-index because of scroll over effect
+// important because radium changes the styles later
 .bm-burger-button {
   position: fixed;
   width: 28px;
@@ -30,6 +32,8 @@
 }
 
 /* General sidebar styles */
+// need a high z-index because of scroll over effect
+// important because radium changes the styles later
 .bm-menu {
   background: $brand-black;
   padding: 2.5em 1.5em 0;
@@ -45,11 +49,15 @@
 }
 
 /* Styling of overlay */
+// need a high z-index because of scroll over effect
+// important because radium changes the styles later
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   z-index: 9 !important;
 }
 
+// need a high z-index because of scroll over effect
+// important because radium changes the styles later
 .bm-menu-wrap {
   z-index: 10 !important;
 }

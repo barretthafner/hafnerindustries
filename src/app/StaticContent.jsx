@@ -1,4 +1,6 @@
 import React from 'react';
+import Mailto from 'react-mailto';
+
 
 class Splash extends React.Component {
   constructor(props) {
@@ -59,9 +61,12 @@ class Contact extends React.Component {
         <div className="pure-g">
           <div className="l-box-lrg pure-u-1 pure-u-md-3-5">
             <section className="text">
-              <h2>The website is under construction.</h2>
-              <h2>Please come again soon!</h2>
-              <h3>Until then, say hi to me on these social networks:</h3>
+              <h2>Thanks for coming!</h2>
+              <h3>Contact me by email:</h3>
+              <ul className="social">
+                <li><Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-mail"></i></Mailto></li>
+              </ul>
+              <h3>Say hi to me on these social networks:</h3>
               <ul className="social">
                 <li><a className="fa fa-github" href="https://github.com/barretthafner"></a></li>
                 <li><a className="fa fa-twitter" href="https://twitter.com/barretthafner"></a></li>
