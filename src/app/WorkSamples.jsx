@@ -12,7 +12,7 @@ class WorkSamples extends React.Component {
 
         <div className="pure-g">
           {
-            this.props.content.MiddleBoxes.map( (item, index) => {
+            this.props.content.map( (item, index) => {
               return <SampleBox title={item.title} description={item.description} icon={item.icon} key={index} />
             })
           }

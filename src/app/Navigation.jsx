@@ -1,5 +1,6 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import { NavLinks } from './contentData';
 
 
 class Header extends React.Component {
@@ -13,12 +14,25 @@ class Header extends React.Component {
           <a className="pure-menu-heading" href="">Hafner Industries</a>
 
           <ul className="pure-menu-list">
-            <li className="pure-menu-item"><a href="#" className="pure-menu-link">Home</a></li>
-            <li className="pure-menu-item"><a href="#" className="pure-menu-link">Work</a></li>
-            <li className="pure-menu-item"><a href="#" className="pure-menu-link">Contact</a></li>
+            {
+              NavLinks.map( (item, index) => {
+                return <li className="pure-menu-item" key={index} ><a href={item.link} className="pure-menu-link">{item.name}</a></li>
+              })
+            }
           </ul>
         </div>
       </div>
+    );
+  }
+};
+
+class HeaderLink extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <li className="pure-menu-item"><a href={this.props.link} className="pure-menu-link">{this.props.name}</a></li>
     );
   }
 };
@@ -31,10 +45,11 @@ class Burger extends React.Component {
   render() {
     return (
       <Menu right >
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+        {
+          NavLinks.map( (item, index) => {
+            return <a className="menu-item" href={item.link} key={index}>{item.name}</a>
+          })
+        }
       </Menu>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import contentData from './contentData';
+import { MiddleBoxes } from './contentData';
 
 import { Header, Burger, Footer } from  './Navigation';
 import { Splash, Bio, Contact } from './StaticContent';
@@ -21,7 +21,7 @@ class Main extends React.Component {
         < Splash />
         <div className="content-wrapper">
           < Bio />
-          < WorkSamples content={contentData} />
+          < WorkSamples content={ MiddleBoxes } />
           < Contact />
           < Footer />
         </div>
