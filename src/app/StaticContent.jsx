@@ -33,7 +33,7 @@ class Bio extends React.Component {
 
   render() {
     return (
-      <div className="ribbon l-box-lrg pure-g">
+      <div id="bio" className="ribbon l-box-lrg pure-g">
         <div className="l-box-lrg is-center pure-u-1 pure-u-sm-1-2 pure-u-lg-2-5">
           <img className="pure-img-responsive" src="img/me_circle.png"/>
         </div>
@@ -55,7 +55,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="content is-center">
+      <div id="contact" className="content is-center">
         <h2 className="content-head">Contact</h2>
 
 

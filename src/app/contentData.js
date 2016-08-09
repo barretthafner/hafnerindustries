@@ -1,15 +1,15 @@
 export const NavLinks = [
   {
     name: "Bio",
-    link: "/bio"
+    link: "#bio"
   },
   {
     name: "Work",
-    link: "/work"
+    link: "#work"
   },
   {
     name: "Contact",
-    link: "/Contact"
+    link: "#contact"
   },
 
 ];

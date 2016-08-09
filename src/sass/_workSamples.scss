@@ -192,7 +192,7 @@
 /* Helper div for animating the background */
 .cbp-hsmenubg {
   background: $brand-white;
-  position: absolute;
+  position: static;
   width: 100%;
   top: 100%;
   left: 0;
@@ -246,7 +246,7 @@
   }
 
   .cbp-hsmenubg {
-    display: none;
+//    display: none;
   }
 
   .cbp-hssubmenu {

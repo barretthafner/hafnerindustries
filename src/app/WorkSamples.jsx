@@ -24,7 +24,7 @@ class MenuBar extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div id="work" className="container">
         <div className="main">
           <nav className="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
             <div className="cbp-hsinner">

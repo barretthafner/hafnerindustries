@@ -1,5 +1,5 @@
 import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import { slide as BurgerMenu } from 'react-burger-menu';
 import { NavLinks } from './contentData';
 
 
@@ -44,13 +44,13 @@ class Burger extends React.Component {
 
   render() {
     return (
-      <Menu right >
+      <BurgerMenu right >
         {
           NavLinks.map( (item, index) => {
             return <a className="menu-item" href={item.link} key={index}>{item.name}</a>
           })
         }
-      </Menu>
+      </BurgerMenu>
     );
   }
 };
