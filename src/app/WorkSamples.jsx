@@ -9,42 +9,13 @@ class WorkSamples extends React.Component {
     return(
       <div className="content">
         <h2 className="content-head is-center">Work Samples</h2>
-
-        <div className="pure-g">
-          {
-            this.props.content.map( (item, index) => {
-              return <SampleBox title={item.title} description={item.description} icon={item.icon} key={index} />
-            })
-          }
-        </div>
+        <MenuBar />
       </div>
     );
   }
 };
 
-class SampleBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  click() {
-    console.log('bammmmm!');
-  }
-
-  render() {
-    return (
-      <div className="l-box pure-u-1 pure-u-md-1-3" onClick={this.click}>
-        <h3 className="content-subhead">
-          <i className={ "fa fa-" + this.props.icon }></i>
-          {this.props.title}
-        </h3>
-        <p>
-          {this.props.description}
-        </p>
-      </div>
-    );
-  }
-};
 
 class MenuBar extends React.Component {
   constructor(props) {

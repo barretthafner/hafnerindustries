@@ -6,7 +6,7 @@ var filename = [packageData.name, 'js'];
 
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/app/index.jsx'),
+  entry: [path.resolve(__dirname, 'src/app/index.jsx'), path.resolve(__dirname, 'src/menuBar.js')],
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: "dist/",
@@ -17,7 +17,6 @@ module.exports = {
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
-        include: path.join(__dirname, 'src'),
         exclude: /node_modules/,
         query: {
           presets: ['es2015', 'react']

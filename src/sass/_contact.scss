@@ -1,0 +1,24 @@
+.fa {
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 0 .25em;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-github:hover {
+  color: #4078C0;
+}
+
+.fa-envelope:hover {
+  color: #D84036;
+}
+
+// to obfuscate email address
+p span.displaynone { display:none; }
+
+.contact-thanks {
+  margin: 0;
+}

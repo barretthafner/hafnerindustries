@@ -17,7 +17,7 @@ class Splash extends React.Component {
             A porfolio site showcasing my work.
           </p>
           <p>
-            <a href="#" className="pure-button pure-button-primary">Contact Me</a>
+            <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Mailto>
           </p>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
@@ -55,25 +55,23 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="content">
-        <h2 className="content-head is-center">Contact</h2>
+      <div className="content is-center">
+        <h2 className="content-head">Contact</h2>
 
-        <div className="pure-g">
-          <div className="l-box-lrg pure-u-1 pure-u-md-3-5">
-            <section className="text">
-              <h2>Thanks for coming!</h2>
-              <h3>Contact me by email:</h3>
-              <ul className="social">
-                <li><Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-mail"></i></Mailto></li>
-              </ul>
-              <h3>Say hi to me on these social networks:</h3>
-              <ul className="social">
-                <li><a className="fa fa-github" href="https://github.com/barretthafner"></a></li>
-                <li><a className="fa fa-twitter" href="https://twitter.com/barretthafner"></a></li>
-              </ul>
-            </section>
-          </div>
-        </div>
+
+
+            <h2 className="contact-thanks">Thanks for coming!</h2>
+            <h3>Send me an email:</h3>
+            <div>
+              <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-envelope" aria-hidden="true"></i></Mailto>
+              <p>barrett@<span className="displaynone">null</span>hafnerindustries.com</p>
+            </div>
+            <h3>Or, say hello to me on these social networks:</h3>
+            <div>
+              <a className="fa fa-github" href="https://github.com/barretthafner"></a>
+              <a className="fa fa-twitter" href="https://twitter.com/barretthafner"></a>
+            </div>
+
       </div>
     );
   }

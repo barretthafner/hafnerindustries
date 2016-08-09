@@ -21,7 +21,7 @@ class Main extends React.Component {
         < Splash />
         <div className="content-wrapper">
           < Bio />
-          < WorkSamples content={ MiddleBoxes } />
+          < WorkSamples />
           < Contact />
           < Footer />
         </div>

@@ -9,8 +9,6 @@ $font-stack: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 
 @import 'reset';
 
-@import 'buttons';
-
 @import 'workSamples';
 
 @import 'burgerMenu';
@@ -20,6 +18,8 @@ $font-stack: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 @import 'footer';
 
 @import 'splash';
+
+@import 'contact';
 
 @import 'mediaQueries';
 
@@ -45,22 +45,7 @@ label {
     color: $brand-black;
 }
 
-.social {
-  padding: 1rem 0 0 0;
 
-  .fa {
-    font-size: 5rem;
-    text-decoration: none;
-  }
-}
-
-.fa-twitter:hover {
-  color: #00aced;
-}
-
-.fa-github:hover {
-  color: #6e7771;
-}
 
 .pure-img-responsive {
     max-width: 70%;
@@ -76,10 +61,6 @@ label {
     text-align: center;
 }
 
-.l-box:hover {
-  background: $brand-grey;
-  border-radius: .5em;
-}
 
 .l-box-lrg {
     padding: 2em;
@@ -133,9 +114,6 @@ label {
     background: $brand-black;
     color: $brand-grey;
 }
-
-
-
 
 
 
