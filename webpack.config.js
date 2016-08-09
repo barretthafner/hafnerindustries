@@ -1,12 +1,10 @@
 var path = require('path')
 var webpack = require('webpack');
 var packageData = require('./package.json');
-var filename = [packageData.name, 'js'];
-
-
+var filename = ['app', 'js'];
 
 module.exports = {
-  entry: [path.resolve(__dirname, 'src/app/index.jsx'), path.resolve(__dirname, 'src/menuBar.js')],
+  entry: [path.resolve(__dirname, 'src/app/index.jsx')],
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: "dist/",

@@ -13,12 +13,12 @@ class Splash extends React.Component {
         <div className="splash">
           <img height="200" src="img/hi_logo.svg" />
           <h1 className="splash-head">Welcome to <br></br> Hafner Industries</h1>
-          <p className="splash-subhead">
+          <div className="splash-subhead">
             A porfolio site showcasing my work.
-          </p>
-          <p>
+          </div>
+          <div>
             <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Mailto>
-          </p>
+          </div>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
       </div>

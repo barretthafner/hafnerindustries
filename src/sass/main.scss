@@ -9,8 +9,6 @@ $font-stack: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 
 @import 'reset';
 
-@import 'workSamples';
-
 @import 'burgerMenu';
 
 @import 'header';
@@ -23,6 +21,7 @@ $font-stack: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 
 @import 'mediaQueries';
 
+@import 'workSamples';
 
 /*
  * -- BASE STYLES --
