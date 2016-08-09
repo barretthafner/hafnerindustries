@@ -6,8 +6,6 @@ var filename = ['app', 'js'];
 module.exports = {
   entry: [path.resolve(__dirname, 'src/app/index.jsx')],
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: "dist/",
     filename: filename.join('.')
   },
   module: {
