@@ -35,5 +35,3 @@ node_modules
 #webstorm
 .idea
 
-#compiled source
-dist
