@@ -40,7 +40,13 @@ class Bio extends React.Component {
         <div className="pure-u-1 pure-u-sm-1-2 pure-u-lg-3-5">
           <h2 className="content-head content-head-ribbon">Bio.</h2>
           <p>
-            This is where the Bio goes.
+            Hello and welcome! I'm Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a recent graduate of the <a href="http://www.thinkful.com">Thinkful.com</a> bootcamp and am currently looking for work in full-stack web development.
+          </p>
+          <p>
+            In a my previous career I was a Product Designer/Developer with <a href="http://www.grovemade.com">Grovemade.com</a>, where I designed, prototyped, and manufactured designer, lifestyle goods.
+          </p>
+          <p>
+            I also enjoy blues dancing, building led light sculptures, and making our lives better by making human/technology interfaces more intuative.
           </p>
         </div>
       </div>

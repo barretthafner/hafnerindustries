@@ -48,3 +48,16 @@
 .home-menu .pure-menu-selected a {
     color: $brand-white;
 }
+
+@media (min-width: 48em) {
+
+    .home-menu {
+        text-align: left;
+    }
+
+    .home-menu ul {
+        float: right;
+    }
+
+
+}

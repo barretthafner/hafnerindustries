@@ -53,7 +53,14 @@
   font-weight: 100;
   border-radius: 5px;
   line-height: 1em;
+
+  @media (min-width: 78em) {
+    font-size: 300%;
+  }
 }
+
+
+
 
 .splash-subhead {
   letter-spacing: 0.05em;
@@ -70,4 +77,19 @@
   border-radius: 5px;
   padding: 0.5em 2em;
   font-size: 120%;
+}
+
+@media (min-width: 48em) {
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 80%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
 }

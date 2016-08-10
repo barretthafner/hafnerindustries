@@ -22,6 +22,16 @@ class WorkSamples extends React.Component {
     super(props);
   }
 
+  componentDidMount () {
+    console.log('bammmmm!');
+    var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+    setTimeout(function() {
+      document.getElementById('cbp-open').click();
+    }, 100);
+  }
+
+  //                   <li><a href="#"><img src="img/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+
   render() {
     return (
       <div id="work" className="container">
@@ -31,10 +41,12 @@ class WorkSamples extends React.Component {
           <div className="cbp-hsinner">
             <ul className="cbp-hsmenu">
               <li>
-                <a href="#">Custom Apps</a>
-                <ul className="cbp-hssubmenu">
-                  <li><a href="#"><img src="img/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-
+                <a id="cbp-open" href="#">Custom Apps</a>
+                <ul className="cbp-hssubmenu cbp-hssub-rows">
+                  < Sample />
+                  < Sample />
+                  < Sample />
+                  < Sample />
                 </ul>
               </li>
               <li>
@@ -55,6 +67,23 @@ class WorkSamples extends React.Component {
         </nav>
         </div>
       </div>
+    );
+  }
+};
+
+
+class Sample extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <li>
+        <h5>Open-bike-project</h5>
+        <p>Description: Blah blah blah</p>
+        <a className="fa fa-github" href="https://github.com/barretthafner/open-bike-project">Github</a>
+        <a href="https://open-bike-project.herokuapp.com/">Demo</a>
+      </li>
     );
   }
 };

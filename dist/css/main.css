@@ -95,6 +95,12 @@ a, a:visited, a:hover, a:active {
 .home-menu .pure-menu-selected a {
   color: #F1F1F1; }
 
+@media (min-width: 48em) {
+  .home-menu {
+    text-align: left; }
+  .home-menu ul {
+    float: right; } }
+
 /* This is the class used for the footer */
 .footer {
   background: #252826; }
@@ -144,6 +150,9 @@ a, a:visited, a:hover, a:active {
   font-weight: 100;
   border-radius: 5px;
   line-height: 1em; }
+  @media (min-width: 78em) {
+    .splash-head {
+      font-size: 300%; } }
 
 .splash-subhead {
   letter-spacing: 0.05em;
@@ -159,6 +168,15 @@ a, a:visited, a:hover, a:active {
   padding: 0.5em 2em;
   font-size: 120%; }
 
+@media (min-width: 48em) {
+  /* We decrease the width of the .splash, since we have more width
+    to work with */
+  .splash {
+    width: 50%;
+    height: 80%; }
+  .splash-head {
+    font-size: 250%; } }
+
 .fa {
   font-size: 3rem;
   text-decoration: none;
@@ -171,7 +189,7 @@ a, a:visited, a:hover, a:active {
   color: #4078C0; }
 
 .fa-envelope:hover {
-  color: #D84036; }
+  color: #58595B; }
 
 p span.displaynone {
   display: none; }
@@ -183,6 +201,13 @@ p span.displaynone {
 .ribbon {
   background: #252826;
   color: #7f8c8d; }
+  @media (min-width: 480px) {
+    .ribbon {
+      font-size: 120%; } }
+  .ribbon a {
+    color: #F1F1F1; }
+  .ribbon a:hover {
+    color: #58595B; }
 
 @font-face {
   font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
@@ -497,31 +522,4 @@ label {
 @media (min-width: 48em) {
   /* We want to give the content area some more padding */
   .content {
-    padding: 1em; }
-  /* We can align the menu header to the left, but float the
-    menu items to the right. */
-  .home-menu {
-    text-align: left; }
-  .home-menu ul {
-    float: right; }
-  /* We increase the height of the splash-container */
-  /*    .splash-container {
-        height: 500px;
-    }*/
-  /* We decrease the width of the .splash, since we have more width
-    to work with */
-  .splash {
-    width: 50%;
-    height: 80%; }
-  .splash-head {
-    font-size: 250%; } }
-
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
-@media (min-width: 78em) {
-  /* We increase the header font size even more */
-  .splash-head {
-    font-size: 300%; } }
+    padding: 1em; } }

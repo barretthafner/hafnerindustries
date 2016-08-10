@@ -34650,7 +34650,29 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'This is where the Bio goes.'
+	            'Hello and welcome! I\'m Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a recent graduate of the ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.thinkful.com' },
+	              'Thinkful.com'
+	            ),
+	            ' bootcamp and am currently looking for work in full-stack web development.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'In a my previous career I was a Product Designer/Developer with ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.grovemade.com' },
+	              'Grovemade.com'
+	            ),
+	            ', where I designed, prototyped, and manufactured designer, lifestyle goods.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'I also enjoy blues dancing, building led light sculptures, and making our lives better by making human/technology interfaces more intuative.'
 	          )
 	        )
 	      );
@@ -34856,7 +34878,7 @@
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -34902,104 +34924,106 @@
 	  }
 	
 	  _createClass(WorkSamples, [{
-	    key: "render",
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log('bammmmm!');
+	      var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+	      setTimeout(function () {
+	        document.getElementById('cbp-open').click();
+	      }, 100);
+	    }
+	
+	    //                   <li><a href="#"><img src="img/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
+	
+	  }, {
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { id: "work", className: "container" },
+	        'div',
+	        { id: 'work', className: 'container' },
 	        _react2.default.createElement(
-	          "h2",
-	          { className: "content-head is-center" },
-	          "Work Samples"
+	          'h2',
+	          { className: 'content-head is-center' },
+	          'Work Samples'
 	        ),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "main" },
+	          'div',
+	          { className: 'main' },
 	          _react2.default.createElement(
-	            "nav",
-	            { className: "cbp-hsmenu-wrapper", id: "cbp-hsmenu-wrapper" },
+	            'nav',
+	            { className: 'cbp-hsmenu-wrapper', id: 'cbp-hsmenu-wrapper' },
 	            _react2.default.createElement(
-	              "div",
-	              { className: "cbp-hsinner" },
+	              'div',
+	              { className: 'cbp-hsinner' },
 	              _react2.default.createElement(
-	                "ul",
-	                { className: "cbp-hsmenu" },
+	                'ul',
+	                { className: 'cbp-hsmenu' },
 	                _react2.default.createElement(
-	                  "li",
+	                  'li',
 	                  null,
 	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Custom Apps"
+	                    'a',
+	                    { id: 'cbp-open', href: '#' },
+	                    'Custom Apps'
 	                  ),
 	                  _react2.default.createElement(
-	                    "ul",
-	                    { className: "cbp-hssubmenu" },
+	                    'ul',
+	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
+	                    _react2.default.createElement(Sample, null),
+	                    _react2.default.createElement(Sample, null),
+	                    _react2.default.createElement(Sample, null),
+	                    _react2.default.createElement(Sample, null)
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Plugins'
+	                  ),
+	                  _react2.default.createElement(
+	                    'ul',
+	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
 	                    _react2.default.createElement(
-	                      "li",
+	                      'li',
 	                      null,
 	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/1.png", alt: "img01" }),
+	                        'a',
+	                        { href: '#' },
+	                        _react2.default.createElement('img', { src: 'img/7.png', alt: 'img07' }),
 	                        _react2.default.createElement(
-	                          "span",
+	                          'span',
 	                          null,
-	                          "Delicate Wine"
+	                          'Lovely Slurp'
 	                        )
 	                      )
 	                    )
 	                  )
 	                ),
 	                _react2.default.createElement(
-	                  "li",
+	                  'li',
 	                  null,
 	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Plugins"
+	                    'a',
+	                    { href: '#' },
+	                    'Fun Projects'
 	                  ),
 	                  _react2.default.createElement(
-	                    "ul",
-	                    { className: "cbp-hssubmenu cbp-hssub-rows" },
+	                    'ul',
+	                    { className: 'cbp-hssubmenu' },
 	                    _react2.default.createElement(
-	                      "li",
+	                      'li',
 	                      null,
 	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/7.png", alt: "img07" }),
+	                        'a',
+	                        { href: '#' },
+	                        _react2.default.createElement('img', { src: 'img/10.png', alt: 'img10' }),
 	                        _react2.default.createElement(
-	                          "span",
+	                          'span',
 	                          null,
-	                          "Lovely Slurp"
-	                        )
-	                      )
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Fun Projects"
-	                  ),
-	                  _react2.default.createElement(
-	                    "ul",
-	                    { className: "cbp-hssubmenu" },
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/10.png", alt: "img10" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Fresh Juice"
+	                          'Fresh Juice'
 	                        )
 	                      )
 	                    )
@@ -35014,6 +35038,50 @@
 	  }]);
 	
 	  return WorkSamples;
+	}(_react2.default.Component);
+	
+	;
+	
+	var Sample = function (_React$Component2) {
+	  _inherits(Sample, _React$Component2);
+	
+	  function Sample(props) {
+	    _classCallCheck(this, Sample);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Sample).call(this, props));
+	  }
+	
+	  _createClass(Sample, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          'Open-bike-project'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Description: Blah blah blah'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'fa fa-github', href: 'https://github.com/barretthafner/open-bike-project' },
+	          'Github'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://open-bike-project.herokuapp.com/' },
+	          'Demo'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Sample;
 	}(_react2.default.Component);
 	
 	;
