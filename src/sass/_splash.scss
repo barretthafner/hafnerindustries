@@ -17,29 +17,32 @@
 }
 
 .splash {
-  /* absolute center .splash within .splash-container */
   width: 50%;
   padding: 0 10%;
   height: 100%;
   margin: auto;
-  //    position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   text-align: center;
   text-transform: uppercase;
   display: table-cell;
   vertical-align: middle;
-  .fa-chevron-down:before {
+
+  img {
+    margin-top: 70px;
+  }
+
+  i:before {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     display: block;
-    //    font-size: 2em;
+  }
+
+  i {
+    padding-top: .1em;
     padding-bottom: .1em;
   }
+
 }
 
 .splash-head {

@@ -19,7 +19,7 @@
 
 /* 100% width bar for menu */
 .cbp-hsinner {
-  background: $brand-blue;
+  background: $brand-black;
   position: relative;
   z-index: 100;
 }
@@ -30,6 +30,7 @@
   max-width: 69em;
   margin: 0 auto;
   padding: 0 1.875em;
+  text-align: center;
 }
 
 .cbp-hsmenu > li {
@@ -50,12 +51,13 @@
   position: relative;
   z-index: 10000;
   outline: none;
+  padding: 0 1em;
 }
 
 .no-touch .cbp-hsmenu > li > a:hover,
 .no-touch .cbp-hsmenu > li > a:focus,
 .cbp-hsmenu > li.cbp-hsitem-open > a {
-  color: $brand-darkgrey;
+  color: $brand-grey;
 }
 
 /* Add an arrow to the main menu link if it has a submenu (not the only child) */
@@ -90,7 +92,7 @@
   position: absolute;
   pointer-events: none;
   border-color: transparent;
-  border-top-color: #47a3da;
+  border-top-color: $brand-black;
   border-width: 10px;
   left: 50%;
   margin-left: -10px;

@@ -57,11 +57,7 @@ class Contact extends React.Component {
     return (
       <div id="contact" className="content is-center">
         <h2 className="content-head">Contact</h2>
-
-
-
-            <h2 className="contact-thanks">Thanks for coming!</h2>
-            <h3>Send me an email:</h3>
+            <h3>Thanks for coming! Send me an email:</h3>
             <div>
               <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-envelope" aria-hidden="true"></i></Mailto>
               <p>barrett@<span className="displaynone">null</span>hafnerindustries.com</p>

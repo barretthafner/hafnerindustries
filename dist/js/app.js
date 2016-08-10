@@ -34683,14 +34683,9 @@
 	          'Contact'
 	        ),
 	        _react2.default.createElement(
-	          'h2',
-	          { className: 'contact-thanks' },
-	          'Thanks for coming!'
-	        ),
-	        _react2.default.createElement(
 	          'h3',
 	          null,
-	          'Send me an email:'
+	          'Thanks for coming! Send me an email:'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -34881,6 +34876,22 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	//class WorkSamples extends React.Component {
+	//  constructor(props) {
+	//    super(props);
+	//  }
+	//
+	//  render() {
+	//    return(
+	//      <div className="content">
+	//        <h2 className="content-head is-center">Work Samples</h2>
+	//        <MenuBar />
+	//      </div>
+	//    );
+	//  }
+	//};
+	
+	
 	var WorkSamples = function (_React$Component) {
 	  _inherits(WorkSamples, _React$Component);
 	
@@ -34895,37 +34906,12 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "content" },
+	        { id: "work", className: "container" },
 	        _react2.default.createElement(
 	          "h2",
 	          { className: "content-head is-center" },
 	          "Work Samples"
 	        ),
-	        _react2.default.createElement(MenuBar, null)
-	      );
-	    }
-	  }]);
-	
-	  return WorkSamples;
-	}(_react2.default.Component);
-	
-	;
-	
-	var MenuBar = function (_React$Component2) {
-	  _inherits(MenuBar, _React$Component2);
-	
-	  function MenuBar(props) {
-	    _classCallCheck(this, MenuBar);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(MenuBar).call(this, props));
-	  }
-	
-	  _createClass(MenuBar, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { id: "work", className: "container" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "main" },
@@ -34944,7 +34930,7 @@
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "#" },
-	                    "Lovely Spirits"
+	                    "Custom Apps"
 	                  ),
 	                  _react2.default.createElement(
 	                    "ul",
@@ -34962,76 +34948,6 @@
 	                          "Delicate Wine"
 	                        )
 	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/2.png", alt: "img02" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Fine Spirit"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/3.png", alt: "img03" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Heavenly Ale"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/4.png", alt: "img04" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Juicy Lemonade"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/5.png", alt: "img05" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Wise Whiskey"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/6.png", alt: "img06" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Sweet Rum"
-	                        )
-	                      )
 	                    )
 	                  )
 	                ),
@@ -35041,7 +34957,7 @@
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "#" },
-	                    "Delicious Beverages"
+	                    "Plugins"
 	                  ),
 	                  _react2.default.createElement(
 	                    "ul",
@@ -35059,160 +34975,6 @@
 	                          "Lovely Slurp"
 	                        )
 	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/8.png", alt: "img08" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Lemony Grappa"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/9.png", alt: "img09" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Eggy Liquor"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/10.png", alt: "img10" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Fresh Juice"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/1.png", alt: "img01" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Delicate Wine"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/2.png", alt: "img02" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Fine Spirit"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/3.png", alt: "img03" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Heavenly Ale"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/4.png", alt: "img04" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Juicy Lemonade"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/5.png", alt: "img05" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Wise Whiskey"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/6.png", alt: "img06" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Sweet Rum"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/1.png", alt: "img01" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Delicate Wine"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/2.png", alt: "img02" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Fine Spirit"
-	                        )
-	                      )
 	                    )
 	                  )
 	                ),
@@ -35222,7 +34984,7 @@
 	                  _react2.default.createElement(
 	                    "a",
 	                    { href: "#" },
-	                    "Fine Liquors"
+	                    "Fun Projects"
 	                  ),
 	                  _react2.default.createElement(
 	                    "ul",
@@ -35240,53 +35002,7 @@
 	                          "Fresh Juice"
 	                        )
 	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/6.png", alt: "img06" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Sweet Rum"
-	                        )
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      "li",
-	                      null,
-	                      _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
-	                        _react2.default.createElement("img", { src: "img/9.png", alt: "img09" }),
-	                        _react2.default.createElement(
-	                          "span",
-	                          null,
-	                          "Eggy Liquor"
-	                        )
-	                      )
 	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Our Mission"
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#" },
-	                    "Contact"
 	                  )
 	                )
 	              )
@@ -35297,7 +35013,7 @@
 	    }
 	  }]);
 	
-	  return MenuBar;
+	  return WorkSamples;
 	}(_react2.default.Component);
 	
 	;

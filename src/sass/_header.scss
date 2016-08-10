@@ -5,6 +5,7 @@
 .home-menu {
   padding: 0.5em;
   text-align: center;
+  font-size: 120%;
 //  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
   background: $brand-white;
 
@@ -22,16 +23,20 @@
     }
   }
 
+  @media (max-width: 700px) {
+    font-size: 80%;
+  }
+
   @media (max-width: 480px) {
     display: none;
   }
 }
 
-.pure-menu .pure-menu-fixed {
+.pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
 //    border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 4;
+    z-index: 6 !important;
 }
 
 .home-menu .pure-menu-heading {
