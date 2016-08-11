@@ -1,4 +1,6 @@
 import React from 'react';
+import { WorkSamplesContent } from './contentData';
+
 
 //class WorkSamples extends React.Component {
 //  constructor(props) {
@@ -14,7 +16,6 @@ import React from 'react';
 //    );
 //  }
 //};
-
 
 
 class WorkSamples extends React.Component {
@@ -52,14 +53,13 @@ class WorkSamples extends React.Component {
               <li>
                 <a href="#">Plugins</a>
                 <ul className="cbp-hssubmenu cbp-hssub-rows">
-                  <li><a href="#"><img src="img/7.png" alt="img07"/><span>Lovely Slurp</span></a></li>
-
+                  < Sample />
                 </ul>
               </li>
               <li>
                 <a href="#">Fun Projects</a>
                 <ul className="cbp-hssubmenu">
-                  <li><a href="#"><img src="img/10.png" alt="img10"/><span>Fresh Juice</span></a></li>
+                  < Sample />
                 </ul>
               </li>
             </ul>
@@ -77,11 +77,13 @@ class Sample extends React.Component {
     super(props);
   }
   render() {
+    const test = WorkSamplesContent.customApps[0];
+    console.log(test);
     return (
-      <li>
-        <h5>Open-bike-project</h5>
-        <p>Description: Blah blah blah</p>
-        <a className="fa fa-github" href="https://github.com/barretthafner/open-bike-project">Github</a>
+      <li className="sample">
+        <h4>{test.title}</h4>
+        <p dangerouslySetInnerHTML={{__html: test.description }}></p>
+        <a href="https://github.com/barretthafner/open-bike-project"><i className="fa fa-github"></i>Github</a>
         <a href="https://open-bike-project.herokuapp.com/">Demo</a>
       </li>
     );

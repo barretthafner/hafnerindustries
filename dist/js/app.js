@@ -21171,6 +21171,57 @@
 	  name: "Contact",
 	  link: "#contact"
 	}];
+	
+	var WorkSamplesContent = exports.WorkSamplesContent = {
+	  customApps: [{
+	    title: "Open-Bike-Project",
+	    description: "A custom app I built for the <a href='http://openbikeinitiative.org'>Open Bike Initiative</a>",
+	    githubLink: "https://github.com/barretthafner/open-bike-project",
+	    demoLink: "https://open-bike-project.herokuapp.com/"
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }],
+	  plugins: [{
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }],
+	  funProjects: [{
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }, {
+	    title: "",
+	    description: "",
+	    githubLink: "",
+	    demoLink: ""
+	  }]
+	};
 
 /***/ },
 /* 174 */
@@ -34890,6 +34941,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _contentData = __webpack_require__(173);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34986,20 +35039,7 @@
 	                  _react2.default.createElement(
 	                    'ul',
 	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
-	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        'a',
-	                        { href: '#' },
-	                        _react2.default.createElement('img', { src: 'img/7.png', alt: 'img07' }),
-	                        _react2.default.createElement(
-	                          'span',
-	                          null,
-	                          'Lovely Slurp'
-	                        )
-	                      )
-	                    )
+	                    _react2.default.createElement(Sample, null)
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -35013,20 +35053,7 @@
 	                  _react2.default.createElement(
 	                    'ul',
 	                    { className: 'cbp-hssubmenu' },
-	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        'a',
-	                        { href: '#' },
-	                        _react2.default.createElement('img', { src: 'img/10.png', alt: 'img10' }),
-	                        _react2.default.createElement(
-	                          'span',
-	                          null,
-	                          'Fresh Juice'
-	                        )
-	                      )
-	                    )
+	                    _react2.default.createElement(Sample, null)
 	                  )
 	                )
 	              )
@@ -35054,22 +35081,21 @@
 	  _createClass(Sample, [{
 	    key: 'render',
 	    value: function render() {
+	      var test = _contentData.WorkSamplesContent.customApps[0];
+	      console.log(test);
 	      return _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'sample' },
 	        _react2.default.createElement(
-	          'h5',
+	          'h4',
 	          null,
-	          'Open-bike-project'
+	          test.title
 	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Description: Blah blah blah'
-	        ),
+	        _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: test.description } }),
 	        _react2.default.createElement(
 	          'a',
-	          { className: 'fa fa-github', href: 'https://github.com/barretthafner/open-bike-project' },
+	          { href: 'https://github.com/barretthafner/open-bike-project' },
+	          _react2.default.createElement('i', { className: 'fa fa-github' }),
 	          'Github'
 	        ),
 	        _react2.default.createElement(
