@@ -177,24 +177,24 @@ a, a:visited, a:hover, a:active {
   .splash-head {
     font-size: 250%; } }
 
-.fa {
+#contact .fa {
   font-size: 3rem;
   text-decoration: none;
   padding: 0 .25em; }
 
-.fa-twitter:hover {
+#contact .fa-twitter:hover {
   color: #00aced; }
 
-.fa-github:hover {
+#contact .fa-github:hover {
   color: #4078C0; }
 
-.fa-envelope:hover {
+#contact .fa-envelope:hover {
   color: #58595B; }
 
-p span.displaynone {
+#contact p span.displaynone {
   display: none; }
 
-.contact-thanks {
+#contact .contact-thanks {
   margin: 0; }
 
 /* This is the class used for the dark-background areas. */
@@ -400,33 +400,18 @@ p span.displaynone {
     box-shadow: 0 1px #cecece;
     text-align: left; } }
 
-.sample h4 {
-  text-transform: uppercase;
-  margin: 2em 0 1em 0; }
-
-.sample p {
-  margin: 0;
-  padding: 0 1em; }
-  .sample p a:hover {
-    color: #252826; }
-
-.sample > a:nth-of-type(1) {
-  display: inline-block;
-  width: 5em;
-  height: 5em;
-  background: #58595B;
-  margin: .5em;
-  border-radius: .2em; }
-  .sample > a:nth-of-type(1) i {
+.sample {
+  background: #e5e5e4; }
+  .sample h4 {
+    text-transform: uppercase;
+    margin: 2em 0 1em 0; }
+  .sample p {
+    margin: 0;
+    padding: 1em; }
+    .sample p a:hover {
+      color: #252826; }
+  .sample a i {
     font-size: 2em; }
-
-.sample > a:nth-of-type(2) {
-  display: inline-block;
-  width: 5em;
-  height: 5em;
-  background: #58595B;
-  margin: .5em;
-  border-radius: .2em; }
 
 /*
  * -- BASE STYLES --

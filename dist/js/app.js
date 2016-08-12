@@ -21172,54 +21172,52 @@
 	  link: "#contact"
 	}];
 	
+	//    {
+	//      title: "",
+	//      description: "",
+	//      githubLink: "",
+	//      demoLink: ""
+	//    }
+	
+	
 	var WorkSamplesContent = exports.WorkSamplesContent = {
 	  customApps: [{
 	    title: "Open-Bike-Project",
-	    description: "A custom app I built for the <a href='http://openbikeinitiative.org'>Open Bike Initiative</a>",
+	    description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>",
 	    githubLink: "https://github.com/barretthafner/open-bike-project",
 	    demoLink: "https://open-bike-project.herokuapp.com/"
 	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
-	    demoLink: ""
-	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
+	    title: "Orion",
+	    description: "A web app for getting things done with your friends.",
+	    githubLink: "https://github.com/barretthafner/orion",
 	    demoLink: ""
 	  }],
 	  plugins: [{
-	    title: "",
-	    description: "",
-	    githubLink: "",
+	    title: "litebox-js",
+	    description: "A dependency-free, lightweight lightbox plugin.",
+	    githubLink: "https://github.com/barretthafner/litebox-js",
+	    demoLink: "http://barretthafner.github.io/litebox-js/example.html"
+	  }, {
+	    title: "todo-list-plugin",
+	    description: "A jQuery plugin for making ToDo lists.",
+	    githubLink: "https://github.com/barretthafner/todo-list-plugin",
 	    demoLink: ""
 	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
+	    title: "quiz-plugin",
+	    description: "A jQuery plugin for making quizes.",
+	    githubLink: "https://github.com/barretthafner/quiz-plugin",
 	    demoLink: ""
 	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
-	    demoLink: ""
+	    title: "redux-quiz",
+	    description: "A copy of a jQuery quiz app I made, instead using React with Redux.",
+	    githubLink: "https://github.com/barretthafner/redux-quiz",
+	    demoLink: "https://redux-quiz.herokuapp.com/"
 	  }],
 	  funProjects: [{
-	    title: "",
-	    description: "",
-	    githubLink: "",
-	    demoLink: ""
-	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
-	    demoLink: ""
-	  }, {
-	    title: "",
-	    description: "",
-	    githubLink: "",
-	    demoLink: ""
+	    title: "fun-tap",
+	    description: "A fun animation and sound app.",
+	    githubLink: "https://github.com/barretthafner/fun-tap",
+	    demoLink: "http://barretthafner.github.io/fun-tap/"
 	  }]
 	};
 
@@ -34951,22 +34949,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	//class WorkSamples extends React.Component {
-	//  constructor(props) {
-	//    super(props);
-	//  }
-	//
-	//  render() {
-	//    return(
-	//      <div className="content">
-	//        <h2 className="content-head is-center">Work Samples</h2>
-	//        <MenuBar />
-	//      </div>
-	//    );
-	//  }
-	//};
-	
-	
 	var WorkSamples = function (_React$Component) {
 	  _inherits(WorkSamples, _React$Component);
 	
@@ -34979,15 +34961,12 @@
 	  _createClass(WorkSamples, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      console.log('bammmmm!');
+	      //make the codrops menu after it is mounted with the component
 	      var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
 	      setTimeout(function () {
 	        document.getElementById('cbp-open').click();
 	      }, 100);
 	    }
-	
-	    //                   <li><a href="#"><img src="img/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
-	
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -35022,10 +35001,9 @@
 	                  _react2.default.createElement(
 	                    'ul',
 	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
-	                    _react2.default.createElement(Sample, null),
-	                    _react2.default.createElement(Sample, null),
-	                    _react2.default.createElement(Sample, null),
-	                    _react2.default.createElement(Sample, null)
+	                    _contentData.WorkSamplesContent.customApps.map(function (item, index) {
+	                      return _react2.default.createElement(Sample, { content: item, key: index });
+	                    })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -35039,7 +35017,9 @@
 	                  _react2.default.createElement(
 	                    'ul',
 	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
-	                    _react2.default.createElement(Sample, null)
+	                    _contentData.WorkSamplesContent.plugins.map(function (item, index) {
+	                      return _react2.default.createElement(Sample, { content: item, key: index });
+	                    })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -35053,7 +35033,9 @@
 	                  _react2.default.createElement(
 	                    'ul',
 	                    { className: 'cbp-hssubmenu' },
-	                    _react2.default.createElement(Sample, null)
+	                    _contentData.WorkSamplesContent.funProjects.map(function (item, index) {
+	                      return _react2.default.createElement(Sample, { content: item, key: index });
+	                    })
 	                  )
 	                )
 	              )
@@ -35081,28 +35063,40 @@
 	  _createClass(Sample, [{
 	    key: 'render',
 	    value: function render() {
-	      var test = _contentData.WorkSamplesContent.customApps[0];
-	      console.log(test);
+	
+	      var content = this.props.content;
+	      var demo = void 0;
+	      if (content.demoLink) {
+	        demo = _react2.default.createElement(
+	          'span',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'pure-button', href: content.demoLink, target: '_blank' },
+	            _react2.default.createElement('i', { className: 'fa fa-laptop', 'aria-hidden': 'true' })
+	          )
+	        );
+	      }
+	
 	      return _react2.default.createElement(
 	        'li',
 	        { className: 'sample' },
 	        _react2.default.createElement(
 	          'h4',
 	          null,
-	          test.title
+	          content.title
 	        ),
-	        _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: test.description } }),
+	        _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } }),
 	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://github.com/barretthafner/open-bike-project' },
-	          _react2.default.createElement('i', { className: 'fa fa-github' }),
-	          'Github'
+	          'span',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'pure-button', href: content.githubLink, target: '_blank' },
+	            _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' })
+	          )
 	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://open-bike-project.herokuapp.com/' },
-	          'Demo'
-	        )
+	        demo
 	      );
 	    }
 	  }]);

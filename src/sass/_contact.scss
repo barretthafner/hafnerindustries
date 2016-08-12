@@ -1,24 +1,26 @@
-.fa {
-  font-size: 3rem;
-  text-decoration: none;
-  padding: 0 .25em;
-}
+#contact {
+  .fa {
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 .25em;
+  }
 
-.fa-twitter:hover {
-  color: #00aced;
-}
+  .fa-twitter:hover {
+    color: #00aced;
+  }
 
-.fa-github:hover {
-  color: #4078C0;
-}
+  .fa-github:hover {
+    color: #4078C0;
+  }
 
-.fa-envelope:hover {
-  color: $brand-darkgrey;
-}
+  .fa-envelope:hover {
+    color: $brand-darkgrey;
+  }
 
-// to obfuscate email address
-p span.displaynone { display:none; }
+  // to obfuscate email address
+  p span.displaynone { display:none; }
 
-.contact-thanks {
-  margin: 0;
+  .contact-thanks {
+    margin: 0;
+  }
 }

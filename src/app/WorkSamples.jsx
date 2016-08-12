@@ -1,37 +1,18 @@
 import React from 'react';
 import { WorkSamplesContent } from './contentData';
 
-
-//class WorkSamples extends React.Component {
-//  constructor(props) {
-//    super(props);
-//  }
-//
-//  render() {
-//    return(
-//      <div className="content">
-//        <h2 className="content-head is-center">Work Samples</h2>
-//        <MenuBar />
-//      </div>
-//    );
-//  }
-//};
-
-
 class WorkSamples extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount () {
-    console.log('bammmmm!');
+    //make the codrops menu after it is mounted with the component
     var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
     setTimeout(function() {
       document.getElementById('cbp-open').click();
     }, 100);
   }
-
-  //                   <li><a href="#"><img src="img/1.png" alt="img01"/><span>Delicate Wine</span></a></li>
 
   render() {
     return (
@@ -44,22 +25,31 @@ class WorkSamples extends React.Component {
               <li>
                 <a id="cbp-open" href="#">Custom Apps</a>
                 <ul className="cbp-hssubmenu cbp-hssub-rows">
-                  < Sample />
-                  < Sample />
-                  < Sample />
-                  < Sample />
+
+                  {WorkSamplesContent.customApps.map(function(item, index) {
+                    return < Sample content={item} key={index} />
+                  })}
+
                 </ul>
               </li>
               <li>
                 <a href="#">Plugins</a>
                 <ul className="cbp-hssubmenu cbp-hssub-rows">
-                  < Sample />
+
+                   {WorkSamplesContent.plugins.map(function(item, index) {
+                    return < Sample content={item} key={index} />
+                  })}
+
                 </ul>
               </li>
               <li>
                 <a href="#">Fun Projects</a>
                 <ul className="cbp-hssubmenu">
-                  < Sample />
+
+                   {WorkSamplesContent.funProjects.map(function(item, index) {
+                    return < Sample content={item} key={index} />
+                  })}
+
                 </ul>
               </li>
             </ul>
@@ -76,15 +66,32 @@ class Sample extends React.Component {
   constructor(props) {
     super(props);
   }
+
+
   render() {
-    const test = WorkSamplesContent.customApps[0];
-    console.log(test);
+
+    const content = this.props.content;
+    let demo;
+    if (content.demoLink) {
+      demo = (
+        <span>
+          <a className="pure-button" href={content.demoLink} target="_blank">
+            <i className="fa fa-laptop" aria-hidden="true"></i>
+          </a>
+        </span>
+      );
+    }
+
     return (
       <li className="sample">
-        <h4>{test.title}</h4>
-        <p dangerouslySetInnerHTML={{__html: test.description }}></p>
-        <a href="https://github.com/barretthafner/open-bike-project"><i className="fa fa-github"></i>Github</a>
-        <a href="https://open-bike-project.herokuapp.com/">Demo</a>
+        <h4>{content.title}</h4>
+        <p dangerouslySetInnerHTML={{__html: content.description }}></p>
+        <span>
+          <a className="pure-button" href={content.githubLink} target="_blank">
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </span>
+        {demo}
       </li>
     );
   }

@@ -383,6 +383,7 @@
 }
 
 .sample {
+  background: $brand-lightgrey;
   h4 {
     text-transform: uppercase;
     margin: 2em 0 1em 0;
@@ -390,32 +391,34 @@
 
   p {
     margin: 0;
-    padding: 0 1em;
+    padding: 1em;
 
     a:hover {
       color: $brand-black;
     }
   }
 
-  > a:nth-of-type(1) {
-    i {
-      font-size: 2em;
-    }
+  a i {
+    font-size: 2em;
+  }
 
-    display: inline-block;
-    width: 5em;
-    height: 5em;
-    background: $brand-darkgrey;
-    margin: .5em;
-    border-radius: .2em;
+  > a:nth-of-type(1) {
+
+
+//    display: inline-block;
+////    width: 5em;
+////    height: 5em;
+//    background: $brand-darkgrey;
+//    margin: .5em;
+//    border-radius: .2em;
   }
 
   > a:nth-of-type(2) {
-    display: inline-block;
-    width: 5em;
-    height: 5em;
-    background: $brand-darkgrey;
-    margin: .5em;
-    border-radius: .2em;
+//    display: inline-block;
+//    width: 5em;
+//    height: 5em;
+//    background: $brand-darkgrey;
+//    margin: .5em;
+//    border-radius: .2em;
   }
 }
