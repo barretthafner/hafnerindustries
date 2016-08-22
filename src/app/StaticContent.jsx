@@ -40,7 +40,7 @@ class Bio extends React.Component {
         <div className="pure-u-1 pure-u-sm-1-2 pure-u-lg-3-5">
           <h2 className="content-head content-head-ribbon">Bio.</h2>
           <p>
-            Hello and welcome! I'm Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a recent graduate of the <a href="http://www.thinkful.com">Thinkful.com</a> bootcamp and am currently looking for work in full-stack web development.
+            Hello and welcome! I'm Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a recent graduate of the <a href="http://www.thinkful.com">Thinkful.com</a> web development bootcamp and am starting a new career in full-stack web development.
           </p>
           <p>
             In a my previous career I was a Product Designer/Developer with <a href="http://www.grovemade.com">Grovemade.com</a>, where I designed, prototyped, and manufactured designer, lifestyle goods.
@@ -63,7 +63,7 @@ class Contact extends React.Component {
     return (
       <div id="contact" className="content is-center">
         <h2 className="content-head">Contact</h2>
-            <h3>Thanks for coming! Send me an email:</h3>
+            <h3>Thanks for coming! Send me an email if you'd like to get in contact:</h3>
             <div>
               <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-envelope" aria-hidden="true"></i></Mailto>
               <p>barrett@<span className="displaynone">null</span>hafnerindustries.com</p>

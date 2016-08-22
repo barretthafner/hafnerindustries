@@ -120,7 +120,7 @@
 
 /* Let's allow 6 item in a row */
 .cbp-hssubmenu > li {
-  width: 16.2%;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
   box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
@@ -155,7 +155,7 @@
 
 .no-touch .cbp-hssubmenu > li a:hover,
 .no-touch .cbp-hssubmenu > li a:focus {
-  color: #888;
+  color: $brand-darkgrey;
 }
 
 //.cbp-hssubmenu > li a img {
@@ -384,6 +384,8 @@
 
 .sample {
   background: $brand-lightgrey;
+  height: 15em;
+
   h4 {
     text-transform: uppercase;
     margin: 2em 0 1em 0;
