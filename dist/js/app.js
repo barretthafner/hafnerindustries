@@ -34712,7 +34712,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'bio', className: 'ribbon l-box-lrg pure-g' },
+	        { id: 'bio', className: 'bio l-box-lrg pure-g' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'l-box-lrg is-center pure-u-1 pure-u-sm-1-2 pure-u-lg-2-5' },
@@ -34729,13 +34729,13 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Hello and welcome! I\'m Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a recent graduate of the ',
+	            'Hello and welcome! I\'m Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a graduate of the ',
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'http://www.thinkful.com' },
 	              'Thinkful.com'
 	            ),
-	            ' web development bootcamp and am starting a new career in full-stack web development.'
+	            ' web development bootcamp and am  full-stack web developer working with Node.js and React.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -34780,7 +34780,7 @@
 	        { id: 'contact', className: 'content is-center' },
 	        _react2.default.createElement(
 	          'h2',
-	          { className: 'content-head' },
+	          { className: 'content-head content-head-ribbon' },
 	          'Contact'
 	        ),
 	        _react2.default.createElement(
@@ -34989,15 +34989,6 @@
 	  }
 	
 	  _createClass(WorkSamples, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      //make the codrops menu after it is mounted with the component
-	      var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-	      setTimeout(function () {
-	        document.getElementById('cbp-open').click();
-	      }, 100);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -35009,66 +35000,54 @@
 	          'Work Samples'
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'main' },
+	          'ul',
+	          null,
 	          _react2.default.createElement(
-	            'nav',
-	            { className: 'cbp-hsmenu-wrapper', id: 'cbp-hsmenu-wrapper' },
+	            'li',
+	            null,
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'cbp-hsinner' },
-	              _react2.default.createElement(
-	                'ul',
-	                { className: 'cbp-hsmenu' },
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'a',
-	                    { id: 'cbp-open', href: '#' },
-	                    'Custom Apps'
-	                  ),
-	                  _react2.default.createElement(
-	                    'ul',
-	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
-	                    _contentData.WorkSamplesContent.customApps.map(function (item, index) {
-	                      return _react2.default.createElement(Sample, { content: item, key: index });
-	                    })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: '#' },
-	                    'Plugins'
-	                  ),
-	                  _react2.default.createElement(
-	                    'ul',
-	                    { className: 'cbp-hssubmenu cbp-hssub-rows' },
-	                    _contentData.WorkSamplesContent.plugins.map(function (item, index) {
-	                      return _react2.default.createElement(Sample, { content: item, key: index });
-	                    })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: '#' },
-	                    'Fun Projects'
-	                  ),
-	                  _react2.default.createElement(
-	                    'ul',
-	                    { className: 'cbp-hssubmenu' },
-	                    _contentData.WorkSamplesContent.funProjects.map(function (item, index) {
-	                      return _react2.default.createElement(Sample, { content: item, key: index });
-	                    })
-	                  )
-	                )
-	              )
+	              'h3',
+	              null,
+	              'Custom Apps'
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _contentData.WorkSamplesContent.customApps.map(function (item, index) {
+	                return _react2.default.createElement(Sample, { content: item, key: index });
+	              })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Plugins'
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _contentData.WorkSamplesContent.plugins.map(function (item, index) {
+	                return _react2.default.createElement(Sample, { content: item, key: index });
+	              })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Fun Projects'
+	            ),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _contentData.WorkSamplesContent.funProjects.map(function (item, index) {
+	                return _react2.default.createElement(Sample, { content: item, key: index });
+	              })
 	            )
 	          )
 	        )

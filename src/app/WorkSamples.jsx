@@ -6,56 +6,42 @@ class WorkSamples extends React.Component {
     super(props);
   }
 
-  componentDidMount () {
-    //make the codrops menu after it is mounted with the component
-    var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-    setTimeout(function() {
-      document.getElementById('cbp-open').click();
-    }, 100);
-  }
-
   render() {
     return (
       <div id="work" className="container">
         <h2 className="content-head is-center">Work Samples</h2>
-        <div className="main">
-        <nav className="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
-          <div className="cbp-hsinner">
-            <ul className="cbp-hsmenu">
-              <li>
-                <a id="cbp-open" href="#">Custom Apps</a>
-                <ul className="cbp-hssubmenu cbp-hssub-rows">
+        <ul>
+          <li>
+            <h3>Custom Apps</h3>
+            <ul>
 
-                  {WorkSamplesContent.customApps.map(function(item, index) {
-                    return < Sample content={item} key={index} />
-                  })}
+              {WorkSamplesContent.customApps.map(function(item, index) {
+                return < Sample content={item} key={index} />
+              })}
 
-                </ul>
-              </li>
-              <li>
-                <a href="#">Plugins</a>
-                <ul className="cbp-hssubmenu cbp-hssub-rows">
-
-                   {WorkSamplesContent.plugins.map(function(item, index) {
-                    return < Sample content={item} key={index} />
-                  })}
-
-                </ul>
-              </li>
-              <li>
-                <a href="#">Fun Projects</a>
-                <ul className="cbp-hssubmenu">
-
-                   {WorkSamplesContent.funProjects.map(function(item, index) {
-                    return < Sample content={item} key={index} />
-                  })}
-
-                </ul>
-              </li>
             </ul>
-          </div>
-        </nav>
-        </div>
+          </li>
+          <li>
+            <h3>Plugins</h3>
+            <ul>
+
+               {WorkSamplesContent.plugins.map(function(item, index) {
+                return < Sample content={item} key={index} />
+              })}
+
+            </ul>
+          </li>
+          <li>
+            <h3>Fun Projects</h3>
+            <ul>
+
+               {WorkSamplesContent.funProjects.map(function(item, index) {
+                return < Sample content={item} key={index} />
+              })}
+
+            </ul>
+          </li>
+        </ul>
       </div>
     );
   }

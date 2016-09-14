@@ -198,221 +198,16 @@ a, a:visited, a:hover, a:active {
   margin: 0; }
 
 /* This is the class used for the dark-background areas. */
-.ribbon {
+.bio {
   background: #252826;
   color: #7f8c8d; }
   @media (min-width: 480px) {
-    .ribbon {
+    .bio {
       font-size: 120%; } }
-  .ribbon a {
+  .bio a {
     color: #F1F1F1; }
-  .ribbon a:hover {
+  .bio a:hover {
     color: #58595B; }
-
-/* Main menu wrapper */
-.cbp-hsmenu-wrapper {
-  position: relative; }
-
-/* Common style for all lists */
-.cbp-hsmenu-wrapper ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto; }
-
-/* 100% width bar for menu */
-.cbp-hsinner {
-  background: #252826;
-  position: relative;
-  z-index: 100; }
-
-/* Main menu style */
-.cbp-hsmenu-wrapper .cbp-hsmenu {
-  width: 90%;
-  max-width: 69em;
-  margin: 0 auto;
-  padding: 0 1.875em;
-  text-align: center; }
-
-.cbp-hsmenu > li {
-  margin-left: 4em;
-  display: inline-block; }
-
-.cbp-hsmenu > li:first-child {
-  margin-left: 0; }
-
-/* Main menu link style */
-.cbp-hsmenu > li > a {
-  color: #F1F1F1;
-  font-size: 1.2em;
-  line-height: 3em;
-  display: inline-block;
-  position: relative;
-  z-index: 10000;
-  outline: none;
-  padding: 0 1em; }
-
-.no-touch .cbp-hsmenu > li > a:hover,
-.no-touch .cbp-hsmenu > li > a:focus,
-.cbp-hsmenu > li.cbp-hsitem-open > a {
-  color: #7f8c8d; }
-
-/* Add an arrow to the main menu link if it has a submenu (not the only child) */
-.cbp-hsmenu > li > a:not(:only-child):before {
-  display: inline-block;
-  font-family: 'bpmenu';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  font-size: 80%;
-  margin-right: 0.3em;
-  opacity: 0.4;
-  vertical-align: middle; }
-
-/* Add a triangle to currently open menu item link */
-.cbp-hsmenu > li.cbp-hsitem-open > a:after {
-  top: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: transparent;
-  border-top-color: #252826;
-  border-width: 10px;
-  left: 50%;
-  margin-left: -10px; }
-
-/* Submenu style */
-.cbp-hssubmenu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  z-index: 0;
-  text-align: center;
-  /* for aligning the sub items */
-  visibility: hidden; }
-
-.cbp-hssubmenu:before,
-.cbp-hssubmenu:after {
-  content: " ";
-  display: table; }
-
-.cbp-hssubmenu:after {
-  clear: both; }
-
-/* Let's allow 6 item in a row */
-.cbp-hssubmenu > li {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
-  opacity: 0;
-  transition: opacity 0.1s 0s; }
-
-/* First 6 items don't have upper box shadow */
-.cbp-hssubmenu > li:nth-child(-n+6) {
-  box-shadow: -28px 0 0 -27px #ddd; }
-
-/* Every 7th item does not have a left box shadow */
-.cbp-hssubmenu > li:nth-child(6n+1) {
-  box-shadow: 0 -28px 0 -27px #ddd; }
-
-/* The first one does not have any box shadow */
-.cbp-hssubmenu > li:first-child {
-  box-shadow: none; }
-
-.no-touch .cbp-hssubmenu > li a:hover,
-.no-touch .cbp-hssubmenu > li a:focus {
-  color: #58595B; }
-
-.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
-  z-index: 1000;
-  visibility: visible; }
-
-.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu > li {
-  opacity: 1;
-  transition: opacity 0.5s 0.1s; }
-
-/* Helper div for animating the background */
-.cbp-hsmenubg {
-  background: #F1F1F1;
-  position: static;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  z-index: 0;
-  height: 0px; }
-
-.no-touch .cbp-hsmenubg {
-  transition: height 0.3s; }
-
-@media screen and (max-width: 900px) {
-  .cbp-hsmenu-wrapper {
-    font-size: 100%; }
-  .cbp-hsmenu-wrapper .cbp-hsmenu {
-    padding: 0;
-    max-width: none;
-    width: 100%; }
-  .cbp-hsmenu > li {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
-    margin: 0 auto;
-    display: block; }
-  .cbp-hsmenu > li:first-child {
-    border-top: none; }
-  .cbp-hsmenu > li > a {
-    display: block; }
-  .cbp-hsmenu > li > a:not(:only-child):before {
-    line-height: 1.8;
-    right: 0;
-    position: absolute;
-    font-size: 200%; }
-  .cbp-hsmenubg {
-    display: none; }
-  .cbp-hssubmenu {
-    background: #F1F1F1;
-    position: relative;
-    overflow: hidden;
-    height: 0; } }
-
-@media screen and (max-width: 1350px) {
-  .cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
-    height: auto; }
-  /* Let's only allow 3 item in a row now */
-  .cbp-hssubmenu > li {
-    width: 30%; }
-  /* Every 5th item does not have a left box shadow */
-  .cbp-hssubmenu > li:nth-child(3n+4) {
-    box-shadow: 0 -28px 0 -27px #ddd; } }
-
-@media screen and (max-width: 760px) {
-  /* Let's only allow 1 item in a row now */
-  .cbp-hssubmenu > li {
-    width: 100%;
-    display: block; }
-  .cbp-hsmenu-wrapper .cbp-hssubmenu > li {
-    box-shadow: 0 1px #cecece;
-    text-align: left; } }
-
-.sample {
-  background: #e5e5e4;
-  height: 15em; }
-  .sample h4 {
-    text-transform: uppercase;
-    margin: 2em 0 1em 0; }
-  .sample p {
-    margin: 0;
-    padding: 1em; }
-    .sample p a:hover {
-      color: #252826; }
-  .sample a i {
-    font-size: 2em; }
 
 /*
  * -- BASE STYLES --
@@ -438,10 +233,7 @@ label {
   max-width: 70%;
   height: auto; }
 
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
- */
+/* -- LAYOUT STYLES -- */
 .l-box {
   padding: 1em;
   text-align: center; }

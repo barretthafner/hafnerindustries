@@ -22,7 +22,6 @@ $font-stack: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 
 @import 'bio';
 
-@import 'workSamples';
 
 /*
  * -- BASE STYLES --
@@ -53,10 +52,7 @@ label {
     height: auto;
 }
 
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
- */
+/* -- LAYOUT STYLES -- */
 .l-box {
     padding: 1em;
     text-align: center;
