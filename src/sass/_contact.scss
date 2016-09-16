@@ -1,4 +1,15 @@
 #contact {
+  background: $brand-black;
+  height: 50em;
+
+  > div {
+    margin: auto;
+  }
+
+  h2, h3 {
+    color: $brand-white;
+  }
+
   .fa {
     font-size: 3rem;
     text-decoration: none;

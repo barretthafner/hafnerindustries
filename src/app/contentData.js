@@ -26,12 +26,14 @@ export const WorkSamplesContent = {
   customApps: [
     {
       title: "Open-Bike-Project",
+      screenshot: "./img/openbikescreen.png",
       description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>. <br /> Default Login: <br/>User - 'test', Pass - 'testy'",
       githubLink: "https://github.com/barretthafner/open-bike-project",
       demoLink: "https://open-bike-project.herokuapp.com/"
     },
     {
       title: "Orion",
+      screenshot: "./img/orionscreen.png",
       description: "A web app for getting things done with your friends.",
       githubLink: "https://github.com/barretthafner/orion",
       demoLink: "https://orion--app.herokuapp.com/"

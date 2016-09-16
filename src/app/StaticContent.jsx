@@ -40,7 +40,7 @@ class Bio extends React.Component {
         <div className="pure-u-1 pure-u-sm-1-2 pure-u-lg-3-5">
           <h2 className="content-head content-head-ribbon">Bio.</h2>
           <p>
-            Hello and welcome! I'm Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a graduate of the <a href="http://www.thinkful.com">Thinkful.com</a> web development bootcamp and am  full-stack web developer working with Node.js and React.
+            Hello and welcome! I'm Barrett Hafner. A 32-year-old web developer living in Portland, OR. I am a graduate of the <a href="http://www.thinkful.com">Thinkful.com</a> bootcamp and do full-stack engineering with Node.js and React.
           </p>
           <p>
             In a my previous career I was a Product Designer/Developer with <a href="http://www.grovemade.com">Grovemade.com</a>, where I designed, prototyped, and manufactured designer, lifestyle goods.
@@ -61,18 +61,20 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div id="contact" className="content is-center">
-        <h2 className="content-head content-head-ribbon">Contact</h2>
-            <h3>Thanks for coming! Send me an email if you'd like to get in contact:</h3>
-            <div>
-              <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-envelope" aria-hidden="true"></i></Mailto>
-              <p>barrett@<span className="displaynone">null</span>hafnerindustries.com</p>
-            </div>
-            <h3>Or, say hello to me on these social networks:</h3>
-            <div>
-              <a className="fa fa-github" href="https://github.com/barretthafner"></a>
-              <a className="fa fa-twitter" href="https://twitter.com/barretthafner"></a>
-            </div>
+      <div id="contact" className="content is-center l-box-lrg pure-g">
+        <div className="pure-u-1">
+          <h2 className="content-head content-head-ribbon">Contact</h2>
+          <h3>Thanks for coming! Send me an email if you'd like to get in contact:</h3>
+          <div>
+            <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><i className="fa fa-envelope" aria-hidden="true"></i></Mailto>
+            <p>barrett@<span className="displaynone">null</span>hafnerindustries.com</p>
+          </div>
+          <h3>Or, say hello to me on these social networks:</h3>
+          <div>
+            <a className="fa fa-github" href="https://github.com/barretthafner"></a>
+            <a className="fa fa-twitter" href="https://twitter.com/barretthafner"></a>
+          </div>
+        </div>
 
       </div>
     );

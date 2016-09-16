@@ -57,24 +57,31 @@ class Sample extends React.Component {
   render() {
 
     const content = this.props.content;
-    let demo;
+    let demo, screenshot;
     if (content.demoLink) {
       demo = (
         <span>
           <a className="pure-button" href={content.demoLink} target="_blank">
-            <i className="fa fa-laptop" aria-hidden="true"></i>
+            <i className="fa fa-laptop" aria-hidden="true"> Demo</i>
           </a>
         </span>
+      );
+    }
+
+    if(content.screenshot) {
+      screenshot = (
+        <img src={content.screenshot}></img>
       );
     }
 
     return (
       <li className="sample">
         <h4>{content.title}</h4>
+        {screenshot}
         <p dangerouslySetInnerHTML={{__html: content.description }}></p>
         <span>
           <a className="pure-button" href={content.githubLink} target="_blank">
-            <i className="fa fa-github" aria-hidden="true"></i>
+            <i className="fa fa-github" aria-hidden="true"> Repo</i>
           </a>
         </span>
         {demo}

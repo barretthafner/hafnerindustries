@@ -21183,11 +21183,13 @@
 	var WorkSamplesContent = exports.WorkSamplesContent = {
 	  customApps: [{
 	    title: "Open-Bike-Project",
+	    screenshot: "./img/openbikescreen.png",
 	    description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>. <br /> Default Login: <br/>User - 'test', Pass - 'testy'",
 	    githubLink: "https://github.com/barretthafner/open-bike-project",
 	    demoLink: "https://open-bike-project.herokuapp.com/"
 	  }, {
 	    title: "Orion",
+	    screenshot: "./img/orionscreen.png",
 	    description: "A web app for getting things done with your friends.",
 	    githubLink: "https://github.com/barretthafner/orion",
 	    demoLink: "https://orion--app.herokuapp.com/"
@@ -34729,13 +34731,13 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Hello and welcome! I\'m Barrett Hafner. A 32-year-old aspiring web developer living in Portland, OR. I am a graduate of the ',
+	            'Hello and welcome! I\'m Barrett Hafner. A 32-year-old web developer living in Portland, OR. I am a graduate of the ',
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'http://www.thinkful.com' },
 	              'Thinkful.com'
 	            ),
-	            ' web development bootcamp and am  full-stack web developer working with Node.js and React.'
+	            ' bootcamp and do full-stack engineering with Node.js and React.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -34777,47 +34779,51 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'contact', className: 'content is-center' },
-	        _react2.default.createElement(
-	          'h2',
-	          { className: 'content-head content-head-ribbon' },
-	          'Contact'
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Thanks for coming! Send me an email if you\'d like to get in contact:'
-	        ),
+	        { id: 'contact', className: 'content is-center l-box-lrg pure-g' },
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'pure-u-1' },
 	          _react2.default.createElement(
-	            _reactMailto2.default,
-	            { email: 'barrett@hafnerindustries.com', obfuscate: true },
-	            _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
+	            'h2',
+	            { className: 'content-head content-head-ribbon' },
+	            'Contact'
 	          ),
 	          _react2.default.createElement(
-	            'p',
+	            'h3',
 	            null,
-	            'barrett@',
+	            'Thanks for coming! Send me an email if you\'d like to get in contact:'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
 	            _react2.default.createElement(
-	              'span',
-	              { className: 'displaynone' },
-	              'null'
+	              _reactMailto2.default,
+	              { email: 'barrett@hafnerindustries.com', obfuscate: true },
+	              _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
 	            ),
-	            'hafnerindustries.com'
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'barrett@',
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'displaynone' },
+	                'null'
+	              ),
+	              'hafnerindustries.com'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Or, say hello to me on these social networks:'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('a', { className: 'fa fa-github', href: 'https://github.com/barretthafner' }),
+	            _react2.default.createElement('a', { className: 'fa fa-twitter', href: 'https://twitter.com/barretthafner' })
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Or, say hello to me on these social networks:'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement('a', { className: 'fa fa-github', href: 'https://github.com/barretthafner' }),
-	          _react2.default.createElement('a', { className: 'fa fa-twitter', href: 'https://twitter.com/barretthafner' })
 	        )
 	      );
 	    }
@@ -35074,7 +35080,8 @@
 	    value: function render() {
 	
 	      var content = this.props.content;
-	      var demo = void 0;
+	      var demo = void 0,
+	          screenshot = void 0;
 	      if (content.demoLink) {
 	        demo = _react2.default.createElement(
 	          'span',
@@ -35082,9 +35089,17 @@
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'pure-button', href: content.demoLink, target: '_blank' },
-	            _react2.default.createElement('i', { className: 'fa fa-laptop', 'aria-hidden': 'true' })
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'fa fa-laptop', 'aria-hidden': 'true' },
+	              ' Demo'
+	            )
 	          )
 	        );
+	      }
+	
+	      if (content.screenshot) {
+	        screenshot = _react2.default.createElement('img', { src: content.screenshot });
 	      }
 	
 	      return _react2.default.createElement(
@@ -35095,6 +35110,7 @@
 	          null,
 	          content.title
 	        ),
+	        screenshot,
 	        _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } }),
 	        _react2.default.createElement(
 	          'span',
@@ -35102,7 +35118,11 @@
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'pure-button', href: content.githubLink, target: '_blank' },
-	            _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' })
+	            _react2.default.createElement(
+	              'i',
+	              { className: 'fa fa-github', 'aria-hidden': 'true' },
+	              ' Repo'
+	            )
 	          )
 	        ),
 	        demo

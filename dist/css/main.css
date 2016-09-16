@@ -162,7 +162,7 @@ a, a:visited, a:hover, a:active {
   padding: 1.5em 0; }
 
 .splash-button {
-  background: #2A7B89;
+  background: #58595B;
   color: #F1F1F1;
   border-radius: 5px;
   padding: 0.5em 2em;
@@ -177,25 +177,27 @@ a, a:visited, a:hover, a:active {
   .splash-head {
     font-size: 250%; } }
 
-#contact .fa {
-  font-size: 3rem;
-  text-decoration: none;
-  padding: 0 .25em; }
-
-#contact .fa-twitter:hover {
-  color: #00aced; }
-
-#contact .fa-github:hover {
-  color: #4078C0; }
-
-#contact .fa-envelope:hover {
-  color: #58595B; }
-
-#contact p span.displaynone {
-  display: none; }
-
-#contact .contact-thanks {
-  margin: 0; }
+#contact {
+  background: #252826;
+  height: 50em; }
+  #contact > div {
+    margin: auto; }
+  #contact h2, #contact h3 {
+    color: #F1F1F1; }
+  #contact .fa {
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 .25em; }
+  #contact .fa-twitter:hover {
+    color: #00aced; }
+  #contact .fa-github:hover {
+    color: #4078C0; }
+  #contact .fa-envelope:hover {
+    color: #58595B; }
+  #contact p span.displaynone {
+    display: none; }
+  #contact .contact-thanks {
+    margin: 0; }
 
 /* This is the class used for the dark-background areas. */
 .bio {
