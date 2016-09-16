@@ -14,12 +14,6 @@ export const NavLinks = [
 
 ];
 
-//    {
-//      title: "",
-//      description: "",
-//      githubLink: "",
-//      demoLink: ""
-//    }
 
 
 export const WorkSamplesContent = {
@@ -29,7 +23,8 @@ export const WorkSamplesContent = {
       screenshot: "./img/openbikescreen.png",
       description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>. <br /> Default Login: <br/>User - 'test', Pass - 'testy'",
       githubLink: "https://github.com/barretthafner/open-bike-project",
-      demoLink: "https://open-bike-project.herokuapp.com/"
+      demoLink: "https://open-bike-project.herokuapp.com/",
+      tags: ["Node.js", "MongoDB", "Passport.js"]
     },
     {
       title: "Orion",

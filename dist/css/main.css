@@ -177,11 +177,21 @@ a, a:visited, a:hover, a:active {
   .splash-head {
     font-size: 250%; } }
 
+/* This is the class used for the dark-background areas. */
+.bio {
+  background: #252826;
+  color: #7f8c8d; }
+  @media (min-width: 480px) {
+    .bio {
+      font-size: 120%; } }
+  .bio a {
+    color: #F1F1F1; }
+  .bio a:hover {
+    color: #58595B; }
+
 #contact {
   background: #252826;
   height: 50em; }
-  #contact > div {
-    margin: auto; }
   #contact h2, #contact h3 {
     color: #F1F1F1; }
   #contact .fa {
@@ -198,18 +208,6 @@ a, a:visited, a:hover, a:active {
     display: none; }
   #contact .contact-thanks {
     margin: 0; }
-
-/* This is the class used for the dark-background areas. */
-.bio {
-  background: #252826;
-  color: #7f8c8d; }
-  @media (min-width: 480px) {
-    .bio {
-      font-size: 120%; } }
-  .bio a {
-    color: #F1F1F1; }
-  .bio a:hover {
-    color: #58595B; }
 
 /*
  * -- BASE STYLES --

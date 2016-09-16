@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { MiddleBoxes } from './contentData';
-
 import { Header, Burger, Footer } from  './Navigation';
-import { Splash, Bio, Contact } from './StaticContent';
+
+import Splash from './Splash';
+import Bio from './Bio';
 import WorkSamples from './WorkSamples';
+import Contact from "./Contact";
 
 
 class Main extends React.Component {
