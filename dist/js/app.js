@@ -34965,7 +34965,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'li',
-	            null,
+	            { className: 'sample-block is-center' },
 	            _react2.default.createElement(
 	              'h3',
 	              null,
@@ -34981,7 +34981,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            null,
+	            { className: 'sample-block is-center' },
 	            _react2.default.createElement(
 	              'h3',
 	              null,
@@ -34997,7 +34997,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            null,
+	            { className: 'sample-block is-center' },
 	            _react2.default.createElement(
 	              'h3',
 	              null,
@@ -35054,7 +35054,7 @@
 	      }
 	
 	      if (content.screenshot) {
-	        screenshot = _react2.default.createElement('img', { src: content.screenshot });
+	        screenshot = _react2.default.createElement('img', { className: 'pure-u-1-2', src: content.screenshot });
 	      }
 	
 	      return _react2.default.createElement(
@@ -35065,22 +35065,30 @@
 	          null,
 	          content.title
 	        ),
-	        screenshot,
-	        _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } }),
 	        _react2.default.createElement(
-	          'span',
+	          'div',
 	          null,
+	          screenshot,
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'pure-button', href: content.githubLink, target: '_blank' },
+	            'div',
+	            { className: 'pure-u-1-2' },
+	            _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } }),
 	            _react2.default.createElement(
-	              'i',
-	              { className: 'fa fa-github', 'aria-hidden': 'true' },
-	              ' Repo'
-	            )
+	              'span',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { className: 'pure-button', href: content.githubLink, target: '_blank' },
+	                _react2.default.createElement(
+	                  'i',
+	                  { className: 'fa fa-github', 'aria-hidden': 'true' },
+	                  ' Repo'
+	                )
+	              )
+	            ),
+	            demo
 	          )
-	        ),
-	        demo
+	        )
 	      );
 	    }
 	  }]);

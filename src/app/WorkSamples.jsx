@@ -11,7 +11,7 @@ class WorkSamples extends React.Component {
       <div id="work" className="container">
         <h2 className="content-head is-center">Work Samples</h2>
         <ul>
-          <li>
+          <li className="sample-block is-center">
             <h3>Custom Apps</h3>
             <ul>
 
@@ -21,7 +21,7 @@ class WorkSamples extends React.Component {
 
             </ul>
           </li>
-          <li>
+          <li className="sample-block is-center">
             <h3>Plugins</h3>
             <ul>
 
@@ -31,7 +31,7 @@ class WorkSamples extends React.Component {
 
             </ul>
           </li>
-          <li>
+          <li className="sample-block is-center">
             <h3>Fun Projects</h3>
             <ul>
 
@@ -70,21 +70,25 @@ class Sample extends React.Component {
 
     if(content.screenshot) {
       screenshot = (
-        <img src={content.screenshot}></img>
+        <img className="pure-u-1-2" src={content.screenshot}></img>
       );
     }
 
     return (
       <li className="sample">
         <h4>{content.title}</h4>
-        {screenshot}
-        <p dangerouslySetInnerHTML={{__html: content.description }}></p>
-        <span>
-          <a className="pure-button" href={content.githubLink} target="_blank">
-            <i className="fa fa-github" aria-hidden="true"> Repo</i>
-          </a>
-        </span>
-        {demo}
+        <div>
+          {screenshot}
+          <div className="pure-u-1-2">
+            <p  dangerouslySetInnerHTML={{__html: content.description }}></p>
+            <span>
+              <a className="pure-button" href={content.githubLink} target="_blank">
+                <i className="fa fa-github" aria-hidden="true"> Repo</i>
+              </a>
+            </span>
+            {demo}
+          </div>
+        </div>
       </li>
     );
   }

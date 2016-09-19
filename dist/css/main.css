@@ -8,7 +8,8 @@ body, html {
   -webkit-font-smoothing: antialiased; }
 
 ol, ul {
-  list-style: none; }
+  padding: 0;
+  list-style-type: none; }
 
 a, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -188,6 +189,33 @@ a, a:visited, a:hover, a:active {
     color: #F1F1F1; }
   .bio a:hover {
     color: #58595B; }
+
+.sample-block {
+  background-color: #e5e5e4;
+  margin: 2em 5em;
+  border-radius: .2em;
+  padding-bottom: .5em; }
+  .sample-block h3 {
+    margin: 0;
+    padding: 1em 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-shadow: .05em .05em .2em #DDD;
+    text-decoration: underline; }
+
+.sample h4 {
+  font-size: 1.5em; }
+
+.sample > div {
+  margin: .5em 1em; }
+  .sample > div > div {
+    margin: 0;
+    padding: none; }
+
+.sample img {
+  border-radius: .2em;
+  box-shadow: 2px 2px 5px #888888; }
 
 #contact {
   background: #252826;

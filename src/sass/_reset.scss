@@ -11,7 +11,8 @@ body, html {
 }
 
 ol, ul {
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 a, a:visited, a:hover, a:active {
