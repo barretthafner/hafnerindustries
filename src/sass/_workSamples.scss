@@ -17,19 +17,34 @@
 }
 
 .sample {
+  padding: 1em;
+
   h4 {
     font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 1em;
   }
   > div {
-    margin: .5em 1em;
+    padding: 0 .5em;
 
     > div {
       margin: 0;
-      padding: none;
+      padding: 0 .5em;
     }
   }
+
   img {
+    width: 100%;
     border-radius: .2em;
     box-shadow: 2px 2px 5px #888888;
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: $brand-darkgrey;
+    color: $brand-white;
+    padding: .5em .5em;
+    margin: .5em .5em;
+    border-radius: .3em;
   }
 }

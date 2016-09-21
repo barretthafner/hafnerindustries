@@ -204,18 +204,28 @@ a, a:visited, a:hover, a:active {
     text-shadow: .05em .05em .2em #DDD;
     text-decoration: underline; }
 
-.sample h4 {
-  font-size: 1.5em; }
-
-.sample > div {
-  margin: .5em 1em; }
-  .sample > div > div {
+.sample {
+  padding: 1em; }
+  .sample h4 {
+    font-size: 1.5em;
     margin: 0;
-    padding: none; }
-
-.sample img {
-  border-radius: .2em;
-  box-shadow: 2px 2px 5px #888888; }
+    margin-bottom: 1em; }
+  .sample > div {
+    padding: 0 .5em; }
+    .sample > div > div {
+      margin: 0;
+      padding: 0 .5em; }
+  .sample img {
+    width: 100%;
+    border-radius: .2em;
+    box-shadow: 2px 2px 5px #888888; }
+  .sample .tag {
+    display: inline-block;
+    background-color: #58595B;
+    color: #F1F1F1;
+    padding: .5em .5em;
+    margin: .5em .5em;
+    border-radius: .3em; }
 
 #contact {
   background: #252826;

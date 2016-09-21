@@ -58,6 +58,7 @@ class Sample extends React.Component {
 
     const content = this.props.content;
     let demo, screenshot;
+    let tags = [];
     if (content.demoLink) {
       demo = (
         <span>
@@ -70,23 +71,41 @@ class Sample extends React.Component {
 
     if(content.screenshot) {
       screenshot = (
-        <img className="pure-u-1-2" src={content.screenshot}></img>
+        <img src={content.screenshot}></img>
       );
+    }
+
+    if (content.tags) {
+      console.log(content.tags);
+      tags = content.tags.map((item, index) => {
+        return ( <span className="tag" key={index}>  {item}  </span> );
+      });
     }
 
     return (
       <li className="sample">
         <h4>{content.title}</h4>
         <div>
-          {screenshot}
-          <div className="pure-u-1-2">
-            <p  dangerouslySetInnerHTML={{__html: content.description }}></p>
-            <span>
-              <a className="pure-button" href={content.githubLink} target="_blank">
-                <i className="fa fa-github" aria-hidden="true"> Repo</i>
-              </a>
-            </span>
-            {demo}
+          <div className="pure-u-lg-1-2">
+            {screenshot}
+          </div>
+          <div className="pure-u-lg-1-2">
+            <div>
+              <h5>Description</h5>
+              <p  dangerouslySetInnerHTML={{__html: content.description }}></p>
+            </div>
+            <div>
+              <h5>Technologies Used</h5>
+              <p>{tags}</p>
+            </div>
+            <div>
+              <span>
+                <a className="pure-button" href={content.githubLink} target="_blank">
+                  <i className="fa fa-github" aria-hidden="true"> Repo</i>
+                </a>
+              </span>
+              {demo}
+            </div>
           </div>
         </div>
       </li>

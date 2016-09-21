@@ -21,17 +21,17 @@ export const WorkSamplesContent = {
     {
       title: "Open-Bike-Project",
       screenshot: "./img/openbikescreen.png",
-      description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>. <br /> Default Login: <br/>User - 'test', Pass - 'testy'",
+      description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>, a low-cost, open-source bike sharing project.",
       githubLink: "https://github.com/barretthafner/open-bike-project",
-      demoLink: "https://open-bike-project.herokuapp.com/",
-      tags: ["Node.js", "MongoDB", "Passport.js"]
+      // demoLink: "https://open-bike-project.herokuapp.com/",
+      tags: ["Node.js", "MongoDB", "Passport.js", "Twilio API", "MailGun API"]
     },
     {
       title: "Orion",
       screenshot: "./img/orionscreen.png",
       description: "A web app for getting things done with your friends.",
       githubLink: "https://github.com/barretthafner/orion",
-      demoLink: "https://orion--app.herokuapp.com/"
+      // demoLink: "https://orion--app.herokuapp.com/"
     }
   ],
   plugins: [
@@ -46,12 +46,6 @@ export const WorkSamplesContent = {
       description: "A jQuery plugin for making ToDo lists.",
       githubLink: "https://github.com/barretthafner/todo-list-plugin",
       demoLink: "http://barretthafner.github.io/todo-list-plugin/"
-    },
-    {
-      title: "quiz-plugin",
-      description: "A jQuery plugin for making quizes.",
-      githubLink: "https://github.com/barretthafner/quiz-plugin",
-      demoLink: "http://barretthafner.github.io/quiz-plugin/"
     },
     {
       title: "redux-quiz",

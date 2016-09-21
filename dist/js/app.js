@@ -34547,16 +34547,15 @@
 	  customApps: [{
 	    title: "Open-Bike-Project",
 	    screenshot: "./img/openbikescreen.png",
-	    description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>. <br /> Default Login: <br/>User - 'test', Pass - 'testy'",
+	    description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>, a low-cost, open-source bike sharing project.",
 	    githubLink: "https://github.com/barretthafner/open-bike-project",
-	    demoLink: "https://open-bike-project.herokuapp.com/",
-	    tags: ["Node.js", "MongoDB", "Passport.js"]
+	    // demoLink: "https://open-bike-project.herokuapp.com/",
+	    tags: ["Node.js", "MongoDB", "Passport.js", "Twilio API", "MailGun API"]
 	  }, {
 	    title: "Orion",
 	    screenshot: "./img/orionscreen.png",
 	    description: "A web app for getting things done with your friends.",
-	    githubLink: "https://github.com/barretthafner/orion",
-	    demoLink: "https://orion--app.herokuapp.com/"
+	    githubLink: "https://github.com/barretthafner/orion"
 	  }],
 	  plugins: [{
 	    title: "litebox-js",
@@ -34568,11 +34567,6 @@
 	    description: "A jQuery plugin for making ToDo lists.",
 	    githubLink: "https://github.com/barretthafner/todo-list-plugin",
 	    demoLink: "http://barretthafner.github.io/todo-list-plugin/"
-	  }, {
-	    title: "quiz-plugin",
-	    description: "A jQuery plugin for making quizes.",
-	    githubLink: "https://github.com/barretthafner/quiz-plugin",
-	    demoLink: "http://barretthafner.github.io/quiz-plugin/"
 	  }, {
 	    title: "redux-quiz",
 	    description: "A copy of a jQuery quiz plugin I made, instead using React with Redux.",
@@ -35037,6 +35031,7 @@
 	      var content = this.props.content;
 	      var demo = void 0,
 	          screenshot = void 0;
+	      var tags = [];
 	      if (content.demoLink) {
 	        demo = _react2.default.createElement(
 	          'span',
@@ -35054,7 +35049,20 @@
 	      }
 	
 	      if (content.screenshot) {
-	        screenshot = _react2.default.createElement('img', { className: 'pure-u-1-2', src: content.screenshot });
+	        screenshot = _react2.default.createElement('img', { src: content.screenshot });
+	      }
+	
+	      if (content.tags) {
+	        console.log(content.tags);
+	        tags = content.tags.map(function (item, index) {
+	          return _react2.default.createElement(
+	            'span',
+	            { className: 'tag', key: index },
+	            '  ',
+	            item,
+	            '  '
+	          );
+	        });
 	      }
 	
 	      return _react2.default.createElement(
@@ -35068,25 +35076,56 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          screenshot,
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'pure-u-1-2' },
-	            _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } }),
+	            { className: 'pure-u-lg-1-2' },
+	            screenshot
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'pure-u-lg-1-2' },
 	            _react2.default.createElement(
-	              'span',
+	              'div',
 	              null,
 	              _react2.default.createElement(
-	                'a',
-	                { className: 'pure-button', href: content.githubLink, target: '_blank' },
-	                _react2.default.createElement(
-	                  'i',
-	                  { className: 'fa fa-github', 'aria-hidden': 'true' },
-	                  ' Repo'
-	                )
+	                'h5',
+	                null,
+	                'Description'
+	              ),
+	              _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'h5',
+	                null,
+	                'Technologies Used'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                tags
 	              )
 	            ),
-	            demo
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { className: 'pure-button', href: content.githubLink, target: '_blank' },
+	                  _react2.default.createElement(
+	                    'i',
+	                    { className: 'fa fa-github', 'aria-hidden': 'true' },
+	                    ' Repo'
+	                  )
+	                )
+	              ),
+	              demo
+	            )
 	          )
 	        )
 	      );
