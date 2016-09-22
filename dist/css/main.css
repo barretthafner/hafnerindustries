@@ -205,9 +205,9 @@ a, a:visited, a:hover, a:active {
     display: inline-block;
     background-color: #58595B;
     color: #F1F1F1;
-    padding: .5em .5em;
-    margin: .5em .5em;
-    border-radius: .3em; }
+    padding: .4em .7em;
+    margin: .2em;
+    border-radius: .2em; }
     .sample-block .tag:hover {
       background-color: #7f8c8d; }
   .sample-block .pure-button {

@@ -64,7 +64,49 @@ export const WorkSamplesContent = {
       screenshot: "./img/orionscreen.png",
       description: "A web app for getting things done with your friends.",
       githubLink: "https://github.com/barretthafner/orion",
-      // demoLink: "https://orion--app.herokuapp.com/"
+      // demoLink: "https://orion--app.herokuapp.com/",
+      tags: [
+        {
+          name: "React",
+          url: "https://facebook.github.io/react/"
+        },
+        {
+          name: "Redux",
+          url: "https://github.com/reactjs/redux"
+        },
+        {
+          name: "React Router",
+          url: "https://github.com/ReactTraining/react-router"
+        },
+        {
+          name: "Node.js",
+          url: "https://nodejs.org/"
+        },
+        {
+          name: "Express",
+          url: "https://expressjs.com/"
+        },
+        {
+          name: "MongoDB",
+          url: "https://www.mongodb.com/"
+        },
+        {
+          name: "Passport.js",
+          url: "http://passportjs.org/"
+        },
+        {
+          name: "Webpack",
+          url: "https://webpack.github.io/"
+        },
+        {
+          name: "Gulp",
+          url: "http://gulpjs.com/"
+        },
+        {
+          name: "Sass",
+          url: "http://sass-lang.com/"
+        }
+      ]
     }
   ],
   plugins: [
