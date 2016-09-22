@@ -34971,10 +34971,10 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        'section',
 	        { id: 'work', className: 'container' },
 	        _react2.default.createElement(
-	          'h2',
+	          'p',
 	          { className: 'content-head is-center' },
 	          'Work Samples'
 	        ),
@@ -35081,7 +35081,7 @@
 	                { className: 'sample-subhead' },
 	                'Description'
 	              ),
-	              _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } })
+	              _react2.default.createElement('p', { className: 'description', dangerouslySetInnerHTML: { __html: content.description } })
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -35092,7 +35092,7 @@
 	                'Technologies Used'
 	              ),
 	              _react2.default.createElement(
-	                'p',
+	                'div',
 	                null,
 	                function () {
 	                  if (content.tags) {
@@ -35113,22 +35113,21 @@
 	              'div',
 	              null,
 	              _react2.default.createElement(
+	                'p',
+	                { className: 'sample-subhead' },
+	                'Check it out:'
+	              ),
+	              _react2.default.createElement(
 	                'a',
-	                { className: 'pure-button', href: content.githubLink, target: '_blank' },
-	                _react2.default.createElement(
-	                  'i',
-	                  { className: 'fa fa-github', 'aria-hidden': 'true' },
-	                  ' Repo'
-	                )
+	                { className: 'pure-button pure-button-active', href: content.githubLink, target: '_blank' },
+	                _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+	                ' Repo'
 	              ),
 	              content.demoLink ? _react2.default.createElement(
 	                'a',
-	                { className: 'pure-button', href: content.demoLink, target: '_blank' },
-	                _react2.default.createElement(
-	                  'i',
-	                  { className: 'fa fa-laptop', 'aria-hidden': 'true' },
-	                  ' Demo'
-	                )
+	                { className: 'pure-button pure-button-active', href: content.demoLink, target: '_blank' },
+	                _react2.default.createElement('i', { className: 'fa fa-laptop', 'aria-hidden': 'true' }),
+	                ' Demo'
 	              ) : null
 	            )
 	          )

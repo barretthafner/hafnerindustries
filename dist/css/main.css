@@ -190,11 +190,17 @@ a, a:visited, a:hover, a:active {
   .bio a:hover {
     color: #58595B; }
 
+.content-head {
+  font-size: 2.2em;
+  color: #252826; }
+
 .sample-block {
   background-color: #e5e5e4;
   margin: 2em 5em;
   border-radius: .2em;
   padding-bottom: .5em; }
+  .sample-block p > a:hover {
+    color: #252826; }
   .sample-block .tag {
     display: inline-block;
     background-color: #58595B;
@@ -202,6 +208,13 @@ a, a:visited, a:hover, a:active {
     padding: .5em .5em;
     margin: .5em .5em;
     border-radius: .3em; }
+    .sample-block .tag:hover {
+      background-color: #7f8c8d; }
+  .sample-block .pure-button {
+    font-size: 125%;
+    background-color: #2A7B89;
+    color: #F1F1F1;
+    margin: 0 .5em; }
   .sample-block img {
     width: 100%;
     border-radius: .2em;
@@ -214,6 +227,10 @@ a, a:visited, a:hover, a:active {
     letter-spacing: .2em;
     text-shadow: .05em .05em .2em #DDD;
     text-decoration: underline; }
+  @media (max-width: 780px) {
+    .sample-block {
+      margin: 0;
+      width: 100%; } }
 
 .sample {
   padding: 1em; }
@@ -227,6 +244,8 @@ a, a:visited, a:hover, a:active {
     font-size: 1.2em;
     color: #252826;
     font-weight: 600; }
+  .sample .description {
+    font-size: 125%; }
   .sample > div {
     padding: 0 .5em; }
     .sample > div > div {

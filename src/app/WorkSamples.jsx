@@ -8,8 +8,8 @@ class WorkSamples extends React.Component {
 
   render() {
     return (
-      <div id="work" className="container">
-        <h2 className="content-head is-center">Work Samples</h2>
+      <section id="work" className="container">
+        <p className="content-head is-center">Work Samples</p>
         <ul>
           <li className="sample-block is-center">
             <h3>Custom Apps</h3>
@@ -42,7 +42,7 @@ class WorkSamples extends React.Component {
             </ul>
           </li>
         </ul>
-      </div>
+      </section>
     );
   }
 };
@@ -70,11 +70,11 @@ class Sample extends React.Component {
           <div className="pure-u-lg-1-2">
             <div>
               <p className="sample-subhead">Description</p>
-              <p  dangerouslySetInnerHTML={{__html: content.description }}></p>
+              <p className="description" dangerouslySetInnerHTML={{__html: content.description }}></p>
             </div>
             <div>
               <p className="sample-subhead">Technologies Used</p>
-              <p>
+              <div>
                 { (() => {
                     if (content.tags) {
                       return content.tags.map((item, index) => {
@@ -83,15 +83,18 @@ class Sample extends React.Component {
                     }
                   })()
                 }
-              </p>
+              </div>
             </div>
             <div>
-              <a className="pure-button" href={content.githubLink} target="_blank">
-                <i className="fa fa-github" aria-hidden="true"> Repo</i>
+              <p className="sample-subhead">Check it out:</p>
+              <a className="pure-button pure-button-active" href={content.githubLink} target="_blank">
+                <i className="fa fa-github" aria-hidden="true"></i>
+                 &nbsp;Repo
               </a>
               { content.demoLink ?
-                  <a className="pure-button" href={content.demoLink} target="_blank">
-                    <i className="fa fa-laptop" aria-hidden="true"> Demo</i>
+                  <a className="pure-button pure-button-active" href={content.demoLink} target="_blank">
+                    <i className="fa fa-laptop" aria-hidden="true"></i>
+                    &nbsp;Demo
                   </a>
                   : null
               }

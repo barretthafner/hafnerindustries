@@ -1,10 +1,18 @@
 
+.content-head {
+  font-size: 2.2em;
+  color: $brand-black;
+}
+
 .sample-block {
   background-color: $brand-lightgrey;
   margin: 2em 5em;
   border-radius: .2em;
   padding-bottom: .5em;
 
+  p > a:hover {
+    color: $brand-black;
+  }
   .tag {
     display: inline-block;
     background-color: $brand-darkgrey;
@@ -12,6 +20,17 @@
     padding: .5em .5em;
     margin: .5em .5em;
     border-radius: .3em;
+
+    &:hover {
+      background-color: $brand-grey;
+    }
+  }
+
+  .pure-button {
+    font-size: 125%;
+    background-color: $brand-blue;
+    color: $brand-white;
+    margin: 0 .5em;
   }
 
   img {
@@ -28,6 +47,11 @@
     letter-spacing: .2em;
     text-shadow: .05em .05em .2em #DDD;
     text-decoration: underline;
+  }
+
+  @media (max-width: 780px) {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -48,6 +72,10 @@
     font-weight: 600;
   }
 
+  .description {
+    font-size: 125%;
+  }
+
   > div {
     padding: 0 .5em;
 
@@ -55,8 +83,4 @@
       padding: 0 .5em;
     }
   }
-
-
-
-
 }
