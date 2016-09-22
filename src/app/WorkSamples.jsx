@@ -53,58 +53,48 @@ class Sample extends React.Component {
     super(props);
   }
 
-
   render() {
 
     const content = this.props.content;
-    let demo, screenshot;
-    let tags = [];
-    if (content.demoLink) {
-      demo = (
-        <span>
-          <a className="pure-button" href={content.demoLink} target="_blank">
-            <i className="fa fa-laptop" aria-hidden="true"> Demo</i>
-          </a>
-        </span>
-      );
-    }
-
-    if(content.screenshot) {
-      screenshot = (
-        <img src={content.screenshot}></img>
-      );
-    }
-
-    if (content.tags) {
-      console.log(content.tags);
-      tags = content.tags.map((item, index) => {
-        return ( <span className="tag" key={index}>  {item}  </span> );
-      });
-    }
 
     return (
       <li className="sample">
-        <h4>{content.title}</h4>
+        <p className="sample-title">{content.title}</p>
         <div>
-          <div className="pure-u-lg-1-2">
-            {screenshot}
-          </div>
+            { content.screenshot ?
+              <div className="pure-u-lg-1-2">
+                <img src={content.screenshot}></img>
+              </div>
+              : null
+            }
           <div className="pure-u-lg-1-2">
             <div>
-              <h5>Description</h5>
+              <p className="sample-subhead">Description</p>
               <p  dangerouslySetInnerHTML={{__html: content.description }}></p>
             </div>
             <div>
-              <h5>Technologies Used</h5>
-              <p>{tags}</p>
+              <p className="sample-subhead">Technologies Used</p>
+              <p>
+                { (() => {
+                    if (content.tags) {
+                      return content.tags.map((item, index) => {
+                        return ( <a className="tag" key={index} href={item.url} target="_blank">  {item.name}  </a> );
+                      });
+                    }
+                  })()
+                }
+              </p>
             </div>
             <div>
-              <span>
-                <a className="pure-button" href={content.githubLink} target="_blank">
-                  <i className="fa fa-github" aria-hidden="true"> Repo</i>
-                </a>
-              </span>
-              {demo}
+              <a className="pure-button" href={content.githubLink} target="_blank">
+                <i className="fa fa-github" aria-hidden="true"> Repo</i>
+              </a>
+              { content.demoLink ?
+                  <a className="pure-button" href={content.demoLink} target="_blank">
+                    <i className="fa fa-laptop" aria-hidden="true"> Demo</i>
+                  </a>
+                  : null
+              }
             </div>
           </div>
         </div>

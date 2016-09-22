@@ -34545,12 +34545,36 @@
 	
 	var WorkSamplesContent = exports.WorkSamplesContent = {
 	  customApps: [{
-	    title: "Open-Bike-Project",
+	    title: "Open Bike Project",
 	    screenshot: "./img/openbikescreen.png",
 	    description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>, a low-cost, open-source bike sharing project.",
 	    githubLink: "https://github.com/barretthafner/open-bike-project",
 	    // demoLink: "https://open-bike-project.herokuapp.com/",
-	    tags: ["Node.js", "MongoDB", "Passport.js", "Twilio API", "MailGun API"]
+	    tags: [{
+	      name: "Node.js",
+	      url: "https://nodejs.org/"
+	    }, {
+	      name: "Express",
+	      url: "https://expressjs.com/"
+	    }, {
+	      name: "MongoDB",
+	      url: "https://www.mongodb.com/"
+	    }, {
+	      name: "Passport.js",
+	      url: "http://passportjs.org/"
+	    }, {
+	      name: "Twilio API",
+	      url: "https://www.twilio.com/"
+	    }, {
+	      name: "MailGun API",
+	      url: "http://www.mailgun.com/"
+	    }, {
+	      name: "Gulp",
+	      url: "http://gulpjs.com/"
+	    }, {
+	      name: "Sass",
+	      url: "http://sass-lang.com/"
+	    }]
 	  }, {
 	    title: "Orion",
 	    screenshot: "./img/orionscreen.png",
@@ -34858,12 +34882,12 @@
 	        { id: "bio", className: "bio l-box-lrg pure-g" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "l-box-lrg is-center pure-u-1 pure-u-sm-1-2 pure-u-lg-2-5" },
+	          { className: "l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5" },
 	          _react2.default.createElement("img", { className: "pure-img-responsive", src: "img/me_circle.png" })
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "pure-u-1 pure-u-sm-1-2 pure-u-lg-3-5" },
+	          { className: "pure-u-1 pure-u-md-1-2 pure-u-lg-3-5" },
 	          _react2.default.createElement(
 	            "h2",
 	            { className: "content-head content-head-ribbon" },
@@ -35029,58 +35053,23 @@
 	    value: function render() {
 	
 	      var content = this.props.content;
-	      var demo = void 0,
-	          screenshot = void 0;
-	      var tags = [];
-	      if (content.demoLink) {
-	        demo = _react2.default.createElement(
-	          'span',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'pure-button', href: content.demoLink, target: '_blank' },
-	            _react2.default.createElement(
-	              'i',
-	              { className: 'fa fa-laptop', 'aria-hidden': 'true' },
-	              ' Demo'
-	            )
-	          )
-	        );
-	      }
-	
-	      if (content.screenshot) {
-	        screenshot = _react2.default.createElement('img', { src: content.screenshot });
-	      }
-	
-	      if (content.tags) {
-	        console.log(content.tags);
-	        tags = content.tags.map(function (item, index) {
-	          return _react2.default.createElement(
-	            'span',
-	            { className: 'tag', key: index },
-	            '  ',
-	            item,
-	            '  '
-	          );
-	        });
-	      }
 	
 	      return _react2.default.createElement(
 	        'li',
 	        { className: 'sample' },
 	        _react2.default.createElement(
-	          'h4',
-	          null,
+	          'p',
+	          { className: 'sample-title' },
 	          content.title
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement(
+	          content.screenshot ? _react2.default.createElement(
 	            'div',
 	            { className: 'pure-u-lg-1-2' },
-	            screenshot
-	          ),
+	            _react2.default.createElement('img', { src: content.screenshot })
+	          ) : null,
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'pure-u-lg-1-2' },
@@ -35088,8 +35077,8 @@
 	              'div',
 	              null,
 	              _react2.default.createElement(
-	                'h5',
-	                null,
+	                'p',
+	                { className: 'sample-subhead' },
 	                'Description'
 	              ),
 	              _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: content.description } })
@@ -35098,33 +35087,49 @@
 	              'div',
 	              null,
 	              _react2.default.createElement(
-	                'h5',
-	                null,
+	                'p',
+	                { className: 'sample-subhead' },
 	                'Technologies Used'
 	              ),
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                tags
+	                function () {
+	                  if (content.tags) {
+	                    return content.tags.map(function (item, index) {
+	                      return _react2.default.createElement(
+	                        'a',
+	                        { className: 'tag', key: index, href: item.url, target: '_blank' },
+	                        '  ',
+	                        item.name,
+	                        '  '
+	                      );
+	                    });
+	                  }
+	                }()
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              null,
 	              _react2.default.createElement(
-	                'span',
-	                null,
+	                'a',
+	                { className: 'pure-button', href: content.githubLink, target: '_blank' },
 	                _react2.default.createElement(
-	                  'a',
-	                  { className: 'pure-button', href: content.githubLink, target: '_blank' },
-	                  _react2.default.createElement(
-	                    'i',
-	                    { className: 'fa fa-github', 'aria-hidden': 'true' },
-	                    ' Repo'
-	                  )
+	                  'i',
+	                  { className: 'fa fa-github', 'aria-hidden': 'true' },
+	                  ' Repo'
 	                )
 	              ),
-	              demo
+	              content.demoLink ? _react2.default.createElement(
+	                'a',
+	                { className: 'pure-button', href: content.demoLink, target: '_blank' },
+	                _react2.default.createElement(
+	                  'i',
+	                  { className: 'fa fa-laptop', 'aria-hidden': 'true' },
+	                  ' Demo'
+	                )
+	              ) : null
 	            )
 	          )
 	        )

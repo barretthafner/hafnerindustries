@@ -5,6 +5,21 @@
   border-radius: .2em;
   padding-bottom: .5em;
 
+  .tag {
+    display: inline-block;
+    background-color: $brand-darkgrey;
+    color: $brand-white;
+    padding: .5em .5em;
+    margin: .5em .5em;
+    border-radius: .3em;
+  }
+
+  img {
+    width: 100%;
+    border-radius: .2em;
+    box-shadow: 2px 2px 5px #888888;
+  }
+
   h3 {
     margin: 0;
     padding: 1em 0;
@@ -19,32 +34,29 @@
 .sample {
   padding: 1em;
 
-  h4 {
+  .sample-title {
+    color: $brand-black;
     font-size: 1.5em;
+    font-weight: 600;
     margin: 0;
     margin-bottom: 1em;
   }
+
+  .sample-subhead {
+    font-size: 1.2em;
+    color: $brand-black;
+    font-weight: 600;
+  }
+
   > div {
     padding: 0 .5em;
 
     > div {
-      margin: 0;
       padding: 0 .5em;
     }
   }
 
-  img {
-    width: 100%;
-    border-radius: .2em;
-    box-shadow: 2px 2px 5px #888888;
-  }
 
-  .tag {
-    display: inline-block;
-    background-color: $brand-darkgrey;
-    color: $brand-white;
-    padding: .5em .5em;
-    margin: .5em .5em;
-    border-radius: .3em;
-  }
+
+
 }

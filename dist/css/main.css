@@ -195,6 +195,17 @@ a, a:visited, a:hover, a:active {
   margin: 2em 5em;
   border-radius: .2em;
   padding-bottom: .5em; }
+  .sample-block .tag {
+    display: inline-block;
+    background-color: #58595B;
+    color: #F1F1F1;
+    padding: .5em .5em;
+    margin: .5em .5em;
+    border-radius: .3em; }
+  .sample-block img {
+    width: 100%;
+    border-radius: .2em;
+    box-shadow: 2px 2px 5px #888888; }
   .sample-block h3 {
     margin: 0;
     padding: 1em 0;
@@ -206,26 +217,20 @@ a, a:visited, a:hover, a:active {
 
 .sample {
   padding: 1em; }
-  .sample h4 {
+  .sample .sample-title {
+    color: #252826;
     font-size: 1.5em;
+    font-weight: 600;
     margin: 0;
     margin-bottom: 1em; }
+  .sample .sample-subhead {
+    font-size: 1.2em;
+    color: #252826;
+    font-weight: 600; }
   .sample > div {
     padding: 0 .5em; }
     .sample > div > div {
-      margin: 0;
       padding: 0 .5em; }
-  .sample img {
-    width: 100%;
-    border-radius: .2em;
-    box-shadow: 2px 2px 5px #888888; }
-  .sample .tag {
-    display: inline-block;
-    background-color: #58595B;
-    color: #F1F1F1;
-    padding: .5em .5em;
-    margin: .5em .5em;
-    border-radius: .3em; }
 
 #contact {
   background: #252826;

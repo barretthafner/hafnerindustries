@@ -19,12 +19,45 @@ export const NavLinks = [
 export const WorkSamplesContent = {
   customApps: [
     {
-      title: "Open-Bike-Project",
+      title: "Open Bike Project",
       screenshot: "./img/openbikescreen.png",
       description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative</a>, a low-cost, open-source bike sharing project.",
       githubLink: "https://github.com/barretthafner/open-bike-project",
       // demoLink: "https://open-bike-project.herokuapp.com/",
-      tags: ["Node.js", "MongoDB", "Passport.js", "Twilio API", "MailGun API"]
+      tags: [
+        {
+          name: "Node.js",
+          url: "https://nodejs.org/"
+        },
+        {
+          name: "Express",
+          url: "https://expressjs.com/"
+        },
+        {
+          name: "MongoDB",
+          url: "https://www.mongodb.com/"
+        },
+        {
+          name: "Passport.js",
+          url: "http://passportjs.org/"
+        },
+        {
+          name: "Twilio API",
+          url: "https://www.twilio.com/"
+        },
+        {
+          name: "MailGun API",
+          url: "http://www.mailgun.com/"
+        },
+        {
+          name: "Gulp",
+          url: "http://gulpjs.com/"
+        },
+        {
+          name: "Sass",
+          url: "http://sass-lang.com/"
+        }
+      ]
     },
     {
       title: "Orion",
