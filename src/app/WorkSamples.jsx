@@ -61,11 +61,22 @@ class Sample extends React.Component {
       <li className="sample">
         <p className="sample-title">{content.title}</p>
         <div>
-            { content.screenshot ?
-              <div className="pure-u-lg-1-2">
-                <img src={content.screenshot}></img>
-              </div>
-              : null
+            {
+              (() => {
+                if (content.screenshot && content.demoLink) {
+                  return (
+                    <div className="pure-u-lg-1-2">
+                      <a href={content.demoLink} target='_blank'><img src={content.screenshot}></img></a>
+                    </div>
+                  );
+                } else if (content.screenshot) {
+                  return (
+                    <div className="pure-u-lg-1-2">
+                      <a href={content.repoLink} target='_blank'><img src={content.screenshot}></img></a>
+                    </div>
+                  );
+                } else { return null; }
+              })()
             }
           <div className="pure-u-lg-1-2">
             <div>
@@ -87,7 +98,7 @@ class Sample extends React.Component {
             </div>
             <div>
               <p className="sample-subhead">Check it out:</p>
-              <a className="pure-button pure-button-active" href={content.githubLink} target="_blank">
+              <a className="pure-button pure-button-active" href={content.repoLink} target="_blank">
                 <i className="fa fa-github" aria-hidden="true"></i>
                  &nbsp;Repo
               </a>
