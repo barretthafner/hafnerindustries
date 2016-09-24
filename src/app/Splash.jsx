@@ -11,7 +11,8 @@ class Splash extends React.Component {
       <div className="splash-container">
         <div className="splash">
           <img height="200" src="img/hi_logo.svg" />
-          <h1 className="splash-head">Welcome to <br></br> Hafner Industries</h1>
+          <h3 className="splash-lead">Welcome to</h3>
+          <h1 className="splash-head">Hafner Industries</h1>
           <div className="splash-subhead">
             A porfolio site showcasing my work.
           </div>

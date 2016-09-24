@@ -34675,6 +34675,9 @@
 	    }, {
 	      name: "jQuery UI",
 	      url: "https://jqueryui.com/"
+	    }, {
+	      name: "jQuery UI",
+	      url: "https://jqueryui.com/"
 	    }]
 	  }],
 	  funProjects: [{
@@ -34763,11 +34766,14 @@
 	          { className: 'splash' },
 	          _react2.default.createElement('img', { height: '200', src: 'img/hi_logo.svg' }),
 	          _react2.default.createElement(
+	            'h3',
+	            { className: 'splash-lead' },
+	            'Welcome to'
+	          ),
+	          _react2.default.createElement(
 	            'h1',
 	            { className: 'splash-head' },
-	            'Welcome to ',
-	            _react2.default.createElement('br', null),
-	            ' Hafner Industries'
+	            'Hafner Industries'
 	          ),
 	          _react2.default.createElement(
 	            'div',

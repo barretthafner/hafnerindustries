@@ -191,6 +191,10 @@ export const WorkSamplesContent = {
           name: "jQuery UI",
           url: "https://jqueryui.com/"
         },
+        {
+          name: "jQuery UI",
+          url: "https://jqueryui.com/"
+        },
       ]
     },
   ],
