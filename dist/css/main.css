@@ -126,11 +126,14 @@ a, a:visited, a:hover, a:active {
   margin: auto;
   text-align: center;
   text-transform: uppercase; }
-  @media (max-width: 410px) {
-    .splash {
-      font-size: 70%; } }
   .splash img {
     margin-top: 70px; }
+    @media (min-width: 900px) {
+      .splash img {
+        height: 15em; } }
+    @media (max-width: 574px) {
+      .splash img {
+        height: 10em; } }
   .splash i:before {
     position: absolute;
     bottom: 0;
@@ -144,17 +147,17 @@ a, a:visited, a:hover, a:active {
 .splash-head {
   width: 100%;
   font-family: "Poiret One";
-  font-size: 3em;
-  padding: 1em 1.6em;
-  line-height: 1em; }
+  font-size: 4em;
+  padding: 0 .3em .2em .3em;
+  line-height: 1em;
+  margin: 0 auto; }
   @media (min-width: 768px) {
     .splash-head {
       font-size: 5em;
-      padding: 0;
       margin: 0 auto; } }
   @media (min-width: 1248px) {
     .splash-head {
-      font-size: 300%; } }
+      font-size: 6em; } }
 
 .splash-subhead {
   letter-spacing: 0.05em;
@@ -169,6 +172,9 @@ a, a:visited, a:hover, a:active {
   border-radius: 5px;
   padding: 0.5em 2em;
   font-size: 120%; }
+
+.splash-lead {
+  font-family: raleway; }
 
 /* This is the class used for the dark-background areas. */
 .bio {

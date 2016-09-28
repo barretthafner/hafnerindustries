@@ -26,12 +26,16 @@
   // display: table-cell;
   // vertical-align: middle;
 
-  @media (max-width: 410px) {
-    font-size: 70%;
-  }
 
   img {
     margin-top: 70px;
+		
+		@media (min-width: 900px){
+			height: 15em;
+		}
+		@media (max-width: 574px){
+			height: 10em;
+		}
 
 
   }
@@ -59,21 +63,21 @@
 .splash-head {
   width: 100%;
   font-family: "Poiret One";
-  font-size: 3em;
+  font-size: 4em;
   // border: 3px solid $brand-grey;
-  padding: 1em 1.6em;
+	padding: 0 .3em .2em .3em;
   // font-weight: 100;
   // border-radius: 5px;
   line-height: 1em;
+	margin: 0 auto;
 
   @media (min-width: 768px) {
     font-size: 5em;
-    padding: 0;
     margin: 0 auto;
   }
 
   @media (min-width: 1248px) {
-    font-size: 300%;
+    font-size: 6em; 
   }
 }
 
@@ -92,4 +96,8 @@
   border-radius: 5px;
   padding: 0.5em 2em;
   font-size: 120%;
+}
+
+.splash-lead {
+	font-family: raleway;	
 }

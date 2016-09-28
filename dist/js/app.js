@@ -34784,8 +34784,8 @@
 	            'div',
 	            { className: 'splash-button-container' },
 	            _react2.default.createElement(
-	              _reactMailto2.default,
-	              { email: 'barrett@hafnerindustries.com', obfuscate: true },
+	              'a',
+	              { href: '#contact' },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'splash-button pure-button pure-button-primary' },

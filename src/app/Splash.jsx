@@ -17,7 +17,7 @@ class Splash extends React.Component {
             A porfolio site showcasing my work.
           </div>
           <div className="splash-button-container">
-            <Mailto email="barrett@hafnerindustries.com" obfuscate={true}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Mailto>
+            <a href="#contact"><div className="splash-button pure-button pure-button-primary">Contact Me</div></a>
           </div>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
