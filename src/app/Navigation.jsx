@@ -16,24 +16,12 @@ class Header extends React.Component {
           <ul className="pure-menu-list">
             {
               NavLinks.map( (item, index) => {
-                // return <li className="pure-menu-item" key={index} ><a href={item.link} className="pure-menu-link">{item.name}</a></li>
-                return <HeaderLink scrollLink={item.scrollLink} name={item.name} key={index} />
+                return <NavLink scrollLink={item.scrollLink} name={item.name} key={index} />
               })
             }
           </ul>
         </div>
       </div>
-    );
-  }
-};
-
-class HeaderLink extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <li className="pure-menu-item"><Link to={this.props.scrollLink} duration={500} smooth={true} className="pure-menu-link">{this.props.name}</Link></li>
     );
   }
 };
@@ -48,10 +36,21 @@ class Burger extends React.Component {
       <BurgerMenu right >
         {
           NavLinks.map( (item, index) => {
-            return <a className="menu-item" href={item.link} key={index}>{item.name}</a>
+            return <NavLink scrollLink={item.scrollLink} name={item.name} key={index} />
           })
         }
       </BurgerMenu>
+    );
+  }
+};
+
+class NavLink extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <li className="pure-menu-item"><Link to={this.props.scrollLink} duration={500} smooth={true} offset={-70} className="pure-menu-link">{this.props.name}</Link></li>
     );
   }
 };

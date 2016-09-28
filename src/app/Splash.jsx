@@ -18,7 +18,7 @@ class Splash extends React.Component {
             A porfolio site showcasing my work.
           </div>
           <div className="splash-button-container">
-            <Link to="contactScroll" duration={500} smooth={true}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Link>
+            <Link to="contactScroll" duration={500} smooth={true} offset={-70}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Link>
           </div>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>

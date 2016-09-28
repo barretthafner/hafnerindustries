@@ -22102,8 +22102,7 @@
 	            'ul',
 	            { className: 'pure-menu-list' },
 	            _contentData.NavLinks.map(function (item, index) {
-	              // return <li className="pure-menu-item" key={index} ><a href={item.link} className="pure-menu-link">{item.name}</a></li>
-	              return _react2.default.createElement(HeaderLink, { scrollLink: item.scrollLink, name: item.name, key: index });
+	              return _react2.default.createElement(NavLink, { scrollLink: item.scrollLink, name: item.name, key: index });
 	            })
 	          )
 	        )
@@ -22116,37 +22115,8 @@
 	
 	;
 	
-	var HeaderLink = function (_React$Component2) {
-	  _inherits(HeaderLink, _React$Component2);
-	
-	  function HeaderLink(props) {
-	    _classCallCheck(this, HeaderLink);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(HeaderLink).call(this, props));
-	  }
-	
-	  _createClass(HeaderLink, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'li',
-	        { className: 'pure-menu-item' },
-	        _react2.default.createElement(
-	          _reactScroll.Link,
-	          { to: this.props.scrollLink, duration: 500, smooth: true, className: 'pure-menu-link' },
-	          this.props.name
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return HeaderLink;
-	}(_react2.default.Component);
-	
-	;
-	
-	var Burger = function (_React$Component3) {
-	  _inherits(Burger, _React$Component3);
+	var Burger = function (_React$Component2) {
+	  _inherits(Burger, _React$Component2);
 	
 	  function Burger(props) {
 	    _classCallCheck(this, Burger);
@@ -22161,17 +22131,42 @@
 	        _reactBurgerMenu.slide,
 	        { right: true },
 	        _contentData.NavLinks.map(function (item, index) {
-	          return _react2.default.createElement(
-	            'a',
-	            { className: 'menu-item', href: item.link, key: index },
-	            item.name
-	          );
+	          return _react2.default.createElement(NavLink, { scrollLink: item.scrollLink, name: item.name, key: index });
 	        })
 	      );
 	    }
 	  }]);
 	
 	  return Burger;
+	}(_react2.default.Component);
+	
+	;
+	
+	var NavLink = function (_React$Component3) {
+	  _inherits(NavLink, _React$Component3);
+	
+	  function NavLink(props) {
+	    _classCallCheck(this, NavLink);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(NavLink).call(this, props));
+	  }
+	
+	  _createClass(NavLink, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'li',
+	        { className: 'pure-menu-item' },
+	        _react2.default.createElement(
+	          _reactScroll.Link,
+	          { to: this.props.scrollLink, duration: 500, smooth: true, offset: -70, className: 'pure-menu-link' },
+	          this.props.name
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return NavLink;
 	}(_react2.default.Component);
 	
 	;
@@ -35669,7 +35664,7 @@
 	            { className: 'splash-button-container' },
 	            _react2.default.createElement(
 	              _reactScroll.Link,
-	              { to: 'contactScroll', duration: 500, smooth: true },
+	              { to: 'contactScroll', duration: 500, smooth: true, offset: -70 },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'splash-button pure-button pure-button-primary' },
