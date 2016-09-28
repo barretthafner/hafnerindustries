@@ -180,13 +180,13 @@ a, a:visited, a:hover, a:active {
 .bio {
   background: #252826;
   color: #7f8c8d; }
-  @media (min-width: 480px) {
-    .bio {
-      font-size: 120%; } }
   .bio a {
     color: #F1F1F1; }
   .bio a:hover {
     color: #58595B; }
+  @media (min-width: 480px) {
+    .bio {
+      font-size: 120%; } }
 
 .content-head {
   font-size: 2.2em;
@@ -249,24 +249,24 @@ a, a:visited, a:hover, a:active {
     .sample > div > div {
       padding: 0 .5em; }
 
-#contact {
+.contact {
   background: #252826;
   height: 50em; }
-  #contact h2, #contact h3 {
+  .contact h2, .contact h3 {
     color: #F1F1F1; }
-  #contact .fa {
+  .contact .fa {
     font-size: 3rem;
     text-decoration: none;
     padding: 0 .25em; }
-  #contact .fa-twitter:hover {
+  .contact .fa-twitter:hover {
     color: #00aced; }
-  #contact .fa-github:hover {
+  .contact .fa-github:hover {
     color: #4078C0; }
-  #contact .fa-envelope:hover {
+  .contact .fa-envelope:hover {
     color: #58595B; }
-  #contact p span.displaynone {
+  .contact p span.displaynone {
     display: none; }
-  #contact .contact-thanks {
+  .contact .contact-thanks {
     margin: 0; }
 
 /*

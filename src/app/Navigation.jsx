@@ -1,7 +1,7 @@
 import React from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
 import { NavLinks } from './contentData';
-
+import { Link } from 'react-scroll';
 
 class Header extends React.Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class Header extends React.Component {
           <ul className="pure-menu-list">
             {
               NavLinks.map( (item, index) => {
-                return <li className="pure-menu-item" key={index} ><a href={item.link} className="pure-menu-link">{item.name}</a></li>
+                // return <li className="pure-menu-item" key={index} ><a href={item.link} className="pure-menu-link">{item.name}</a></li>
+                return <HeaderLink scrollLink={item.scrollLink} name={item.name} key={index} />
               })
             }
           </ul>
@@ -32,7 +33,7 @@ class HeaderLink extends React.Component {
   }
   render() {
     return (
-      <li className="pure-menu-item"><a href={this.props.link} className="pure-menu-link">{this.props.name}</a></li>
+      <li className="pure-menu-item"><Link to={this.props.scrollLink} duration={500} smooth={true} className="pure-menu-link">{this.props.name}</Link></li>
     );
   }
 };

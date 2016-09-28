@@ -1,15 +1,18 @@
 export const NavLinks = [
   {
     name: "Bio",
-    link: "#bio"
+    link: "#bio",
+    scrollLink: "bioScroll"
   },
   {
     name: "Work",
-    link: "#work"
+    link: "#work",
+    scrollLink: "workScroll"
   },
   {
     name: "Contact",
-    link: "#contact"
+    link: "#contact",
+    scrollLink: "contactScroll"
   },
 
 ];

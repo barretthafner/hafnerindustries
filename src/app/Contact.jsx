@@ -8,7 +8,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div id="contact" className="content is-center l-box-lrg pure-g">
+      <section className="contact content is-center l-box-lrg pure-g">
         <div className="pure-u-1">
           <h2 className="content-head content-head-ribbon">Contact</h2>
           <h3>Thanks for coming! Send me an email if you'd like to get in contact:</h3>
@@ -23,7 +23,7 @@ class Contact extends React.Component {
           </div>
         </div>
 
-      </div>
+      </section>
     );
   }
 };

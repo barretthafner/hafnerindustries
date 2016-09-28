@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Element } from 'react-scroll';
 
 import { Header, Burger, Footer } from  './Navigation';
 
@@ -20,10 +21,16 @@ class Main extends React.Component {
         < Header />
         < Burger />
         < Splash />
-        <div className="content-wrapper">
-          < Bio />
-          < WorkSamples />
-          < Contact />
+        <div className='content-wrapper'>
+          <Element name='bioScroll'>
+            < Bio />
+          </Element>
+          <Element name='workScroll'>
+            < WorkSamples />
+          </Element>
+          <Element name='contactScroll'>
+            < Contact />
+          </Element>
           < Footer />
         </div>
       </div>

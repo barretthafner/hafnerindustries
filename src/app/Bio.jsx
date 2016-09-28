@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 class Bio extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Bio extends React.Component {
 
   render() {
     return (
-      <div id="bio" className="bio l-box-lrg pure-g">
+      <section className="bio l-box-lrg pure-g">
         <div className="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
           <img className="pure-img-responsive" src="img/me_circle.png"/>
         </div>
@@ -23,7 +24,7 @@ class Bio extends React.Component {
             I also enjoy blues dancing, building led light sculptures, and making our lives better by making human/technology interfaces more intuative.
           </p>
         </div>
-      </div>
+      </section>
     );
   }
 };

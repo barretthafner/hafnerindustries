@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import { WorkSamplesContent } from './contentData';
 
 class WorkSamples extends React.Component {
@@ -8,7 +9,7 @@ class WorkSamples extends React.Component {
 
   render() {
     return (
-      <section id="work" className="container">
+      <section className="container">
         <p className="content-head is-center">Work Samples</p>
         <ul>
           <li className="sample-block is-center">

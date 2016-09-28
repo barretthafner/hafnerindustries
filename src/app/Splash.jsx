@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Mailto from 'react-mailto';
 
 class Splash extends React.Component {
@@ -17,7 +18,7 @@ class Splash extends React.Component {
             A porfolio site showcasing my work.
           </div>
           <div className="splash-button-container">
-            <a href="#contact"><div className="splash-button pure-button pure-button-primary">Contact Me</div></a>
+            <Link to="contactScroll" duration={500} smooth={true}><div className="splash-button pure-button pure-button-primary">Contact Me</div></Link>
           </div>
           <i className="fa fa-chevron-down" aria-hidden="true"></i>
         </div>

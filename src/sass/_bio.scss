@@ -4,17 +4,17 @@
   background: $brand-black;
   color: $brand-grey;
 
-  @media (min-width: 480px) {
-      font-size: 120%;
-
-  }
-
   a {
     color: $brand-white;
   }
 
   a:hover {
     color: $brand-darkgrey;
+  }
+
+  @media (min-width: 480px) {
+      font-size: 120%;
+
   }
 }
 
