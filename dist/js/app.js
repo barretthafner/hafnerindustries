@@ -22085,6 +22085,11 @@
 	  }
 	
 	  _createClass(Header, [{
+	    key: 'scrollToTop',
+	    value: function scrollToTop() {
+	      _reactScroll.animateScroll.scrollToTop();
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -22095,7 +22100,7 @@
 	          { className: 'home-menu pure-menu pure-menu-horizontal pure-menu-fixed' },
 	          _react2.default.createElement(
 	            'a',
-	            { className: 'pure-menu-heading', href: '' },
+	            { className: 'pure-menu-heading', onClick: this.scrollToTop },
 	            'Hafner Industries'
 	          ),
 	          _react2.default.createElement(

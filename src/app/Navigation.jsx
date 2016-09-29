@@ -1,17 +1,22 @@
 import React from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
 import { NavLinks } from './contentData';
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  scrollToTop() {
+    animateScroll.scrollToTop();
+  }
+
   render() {
     return (
       <div className="header">
         <div className="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-          <a className="pure-menu-heading" href="">Hafner Industries</a>
+          <a className="pure-menu-heading" onClick={this.scrollToTop}>Hafner Industries</a>
 
           <ul className="pure-menu-list">
             {
