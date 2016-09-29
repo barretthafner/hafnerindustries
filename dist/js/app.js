@@ -35537,7 +35537,7 @@
 	    repoLink: "https://github.com/barretthafner/litebox-js",
 	    demoLink: "http://barretthafner.github.io/litebox-js/example.html",
 	    tags: [{
-	      name: "No jQuery",
+	      name: "Pure JS DOM Manipulation",
 	      url: "http://youmightnotneedjquery.com/"
 	    }]
 	  }, {
@@ -35552,46 +35552,133 @@
 	    }, {
 	      name: "jQuery UI",
 	      url: "https://jqueryui.com/"
-	    }, {
-	      name: "jQuery UI",
-	      url: "https://jqueryui.com/"
 	    }]
 	  }],
 	  funProjects: [{
-	    title: "thinkful-shopping-list",
-	    description: "A persistant shopping list application, using jQuery.",
-	    repoLink: "https://github.com/barretthafner/thinkful-shopping-list",
-	    demoLink: "https://thinkful-shopping-list.herokuapp.com/"
-	  }, {
 	    title: "pictionary",
+	    screenshot: "./img/pictionaryScreen.png",
 	    description: "A fun game of pictionary built with socket.io.",
 	    repoLink: "https://github.com/barretthafner/pictionary",
-	    demoLink: "https://my-pictionary.herokuapp.com/"
+	    demoLink: "https://my-pictionary.herokuapp.com/",
+	    tags: [{
+	      name: "Node.js",
+	      url: "https://nodejs.org/"
+	    }, {
+	      name: "Express",
+	      url: "https://expressjs.com/"
+	    }, {
+	      name: "Socket.io",
+	      url: "http://socket.io/"
+	    }, {
+	      name: "jQuery",
+	      url: "https://jquery.com/"
+	    }, {
+	      name: "Handlebars.js",
+	      url: "http://handlebarsjs.com/"
+	    }]
 	  }, {
-	    title: "fun-tap",
-	    description: "A fun animation and sound app modeled after the <a href='http://www.patatap.com/' target='_blank'>Patatap  <i class='fa fa-external-link' aria-hidden='true'></i></a> project.",
-	    repoLink: "https://github.com/barretthafner/fun-tap",
-	    demoLink: "http://barretthafner.github.io/fun-tap/"
-	  }, {
+	    title: "thinkful-shopping-list",
+	    screenshot: "./img/shoppingListScreen.png",
+	    description: "A persistant shopping list application, using jQuery.",
+	    repoLink: "https://github.com/barretthafner/thinkful-shopping-list",
+	    demoLink: "https://thinkful-shopping-list.herokuapp.com/",
+	    tags: [{
+	      name: "Node.js",
+	      url: "https://nodejs.org/"
+	    }, {
+	      name: "Express",
+	      url: "https://expressjs.com/"
+	    }, {
+	      name: "MongoDB",
+	      url: "https://www.mongodb.com/"
+	    }, {
+	      name: "Mocha",
+	      url: "https://mochajs.org/"
+	    }, {
+	      name: "Chai",
+	      url: "http://chaijs.com/"
+	    }, {
+	      name: "Travis CI",
+	      url: "https://travis-ci.org/"
+	    }, {
+	      name: "jQuery",
+	      url: "https://jquery.com/"
+	    }, {
+	      name: "Handlebars.js",
+	      url: "http://handlebarsjs.com/"
+	    }, {
+	      name: "Pure CSS",
+	      url: "http://purecss.io/"
+	    }]
+	
+	  },
+	  // {
+	  //   title: "fun-tap",
+	  //   description: "A fun animation and sound app modeled after the <a href='http://www.patatap.com/' target='_blank'>Patatap  <i class='fa fa-external-link' aria-hidden='true'></i></a> project.",
+	  //   repoLink: "https://github.com/barretthafner/fun-tap",
+	  //   demoLink: "http://barretthafner.github.io/fun-tap/"
+	  // },
+	  {
 	    title: "react-number-game",
+	    screenshot: "./img/numberGameScreen.png",
 	    description: "A game built in React, in which one trys to get rid of all the numbers between 1 and 9 by adding them into a randomly generated amount of stars.",
 	    repoLink: "https://github.com/barretthafner/react-number-game",
-	    demoLink: "http://barretthafner.github.io/react-number-game/"
+	    demoLink: "http://barretthafner.github.io/react-number-game/",
+	    tags: [{
+	      name: "React",
+	      url: "https://facebook.github.io/react/"
+	    }, {
+	      name: "Redux",
+	      url: "https://github.com/reactjs/redux"
+	    }, {
+	      name: "ES6",
+	      url: "http://www.ecma-international.org/ecma-262/6.0/"
+	    }, {
+	      name: "Babel",
+	      url: "https://babeljs.io/"
+	    }, {
+	      name: "jQuery",
+	      url: "https://jquery.com/"
+	    }, {
+	      name: "Bootstrap",
+	      url: "http://getbootstrap.com/"
+	    }]
 	  }, {
 	    title: "rgb-guessing-game",
-	    description: "A game built with jQuery, in which a player tries to guess what color a certain RGB value is.",
+	    screenshot: "./img/rgbGuessingScreen.png",
+	    description: "A game built with pure JS DOM manipulation, in which a player tries to guess what color a certain RGB value is.",
 	    repoLink: "https://github.com/barretthafner/rgb-guessing-game/",
-	    demoLink: "http://barretthafner.github.io/rgb-guessing-game/"
+	    demoLink: "http://barretthafner.github.io/rgb-guessing-game/",
+	    tags: [{
+	      name: "Pure JS DOM Manipulation",
+	      url: "https://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/"
+	    }]
 	  }, {
 	    title: "score-keeper",
+	    screenshot: "./img/scoreKeeperScreen.png",
 	    description: "A simple score keeping app written with jQuery.",
 	    repoLink: "https://github.com/barretthafner/score-keeper",
-	    demoLink: "http://barretthafner.github.io/score-keeper/"
+	    demoLink: "http://barretthafner.github.io/score-keeper/",
+	    tags: [{
+	      name: "Pure JS DOM Manipulation",
+	      url: "https://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/"
+	    }]
 	  }, {
 	    title: "youtube-browser",
+	    screenshot: "./img/youtubeBrowserScreen.png",
 	    description: "A simple dependency-free app that searches the Youtube API.",
 	    repoLink: "https://github.com/barretthafner/youtube-browser",
-	    demoLink: "https://youtube-browser.herokuapp.com/"
+	    demoLink: "https://youtube-browser.herokuapp.com/",
+	    tags: [{
+	      name: "YouTube API",
+	      url: "https://developers.google.com/youtube/"
+	    }, {
+	      name: "Litebox.js",
+	      url: "https://github.com/barretthafner/litebox-js"
+	    }, {
+	      name: "Bootstrap",
+	      url: "http://getbootstrap.com/"
+	    }]
 	  }]
 	};
 
