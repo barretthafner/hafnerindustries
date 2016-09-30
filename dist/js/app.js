@@ -36157,21 +36157,11 @@
 	            _react2.default.createElement(
 	              'div',
 	              null,
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'sample-subhead' },
-	                'Description'
-	              ),
 	              _react2.default.createElement('p', { className: 'description', dangerouslySetInnerHTML: { __html: content.description } })
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              null,
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'sample-subhead' },
-	                'Technologies Used'
-	              ),
 	              _react2.default.createElement(
 	                'div',
 	                null,
@@ -36193,11 +36183,6 @@
 	            _react2.default.createElement(
 	              'div',
 	              null,
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'sample-subhead' },
-	                'Check it out:'
-	              ),
 	              _react2.default.createElement(
 	                'a',
 	                { className: 'pure-button pure-button-active', href: content.repoLink, target: '_blank' },

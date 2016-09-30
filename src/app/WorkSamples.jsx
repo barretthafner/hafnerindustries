@@ -81,11 +81,11 @@ class Sample extends React.Component {
             }
           <div className="pure-u-lg-1-2">
             <div>
-              <p className="sample-subhead">Description</p>
+							{/* <p className="sample-subhead">Description</p> */}
               <p className="description" dangerouslySetInnerHTML={{__html: content.description }}></p>
             </div>
             <div>
-              <p className="sample-subhead">Technologies Used</p>
+							{/* <p className="sample-subhead">Technologies Used</p> */}
               <div>
                 { (() => {
                     if (content.tags) {
@@ -98,7 +98,7 @@ class Sample extends React.Component {
               </div>
             </div>
             <div>
-              <p className="sample-subhead">Check it out:</p>
+							{/* <p className="sample-subhead">Check it out:</p> */}
               <a className="pure-button pure-button-active" href={content.repoLink} target="_blank">
                 <i className="fa fa-github" aria-hidden="true"></i>
                  &nbsp;Repo
