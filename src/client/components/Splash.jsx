@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Mailto from 'react-mailto';
 
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+
 class Splash extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +12,7 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <div className="splash-container">
+      <div className="splash-container" onClick={(event) => this.props.handleClick(event.target)}>
         <div className="splash">
           <img height="200" src="img/hi_logo.svg" />
           <h3 className="splash-lead">Welcome to</h3>
@@ -27,5 +30,14 @@ class Splash extends React.Component {
   }
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    handleClick: (target) => {
+      dispatch(actions.clickTest(target));
+    }
+  }
+};
 
-export default Splash
+
+const Container = connect(null, mapDispatchToProps)(Splash);
+export default Container

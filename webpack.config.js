@@ -1,12 +1,11 @@
 var path = require('path')
 var webpack = require('webpack');
 var packageData = require('./package.json');
-var filename = ['app', 'js'];
 
 module.exports = {
   entry: [path.resolve(__dirname, 'src/client/index.jsx')],
   output: {
-    filename: filename.join('.')
+    filename: 'app.js'
   },
   module: {
     loaders: [

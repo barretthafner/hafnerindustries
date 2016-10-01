@@ -3,7 +3,7 @@ import store from '../store';
 
 export default function reducer(state = {}, action) {
 
-  console.log('reducer called! \naction:', action.type, '\nstate:', state);
+  console.log('reducer called! \naction:', action.type);
 
   switch (action.type) {
 

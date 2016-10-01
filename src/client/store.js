@@ -7,7 +7,10 @@ const rootReducer = combineReducers({
 });
 
 const initialState = {
-  clickCount: 0
+  app: {
+    clickCount: 0,
+    target: null
+  }
 };
 
 export const store = createStore(rootReducer, initialState);

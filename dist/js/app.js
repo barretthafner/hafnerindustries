@@ -23793,7 +23793,10 @@
 	});
 	
 	var initialState = {
-	  clickCount: 0
+	  app: {
+	    clickCount: 0,
+	    target: null
+	  }
 	};
 	
 	var store = exports.store = (0, _redux.createStore)(rootReducer, initialState);
@@ -23826,7 +23829,7 @@
 	  var action = arguments[1];
 	
 	
-	  console.log('reducer called! \naction:', action.type, '\nstate:', state);
+	  console.log('reducer called! \naction:', action.type);
 	
 	  switch (action.type) {
 	
@@ -37521,6 +37524,14 @@
 	
 	var _reactMailto2 = _interopRequireDefault(_reactMailto);
 	
+	var _reactRedux = __webpack_require__(186);
+	
+	var _actions = __webpack_require__(215);
+	
+	var actions = _interopRequireWildcard(_actions);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37541,9 +37552,13 @@
 	  _createClass(Splash, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'splash-container' },
+	        { className: 'splash-container', onClick: function onClick(event) {
+	            return _this2.props.handleClick(event.target);
+	          } },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'splash' },
@@ -37587,7 +37602,16 @@
 	
 	;
 	
-	exports.default = Splash;
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {
+	    handleClick: function handleClick(target) {
+	      dispatch(actions.clickTest(target));
+	    }
+	  };
+	};
+	
+	var Container = (0, _reactRedux.connect)(null, mapDispatchToProps)(Splash);
+	exports.default = Container;
 
 /***/ },
 /* 297 */
