@@ -1,5 +1,4 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 
 class Bio extends React.Component {
   constructor(props) {

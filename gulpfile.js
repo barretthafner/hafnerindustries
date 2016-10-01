@@ -32,9 +32,9 @@ var productionEnv = env === 'production';
 
 var paths = {
   index: './src/index.html',
-  sass: './src/sass/**/*.scss',
-  img: './src/img/**/*',
-  app: './src/app/**/*',
+  sass: './src/public/sass/**/*.scss',
+  img: './src/public/img/**/*',
+  app: './src/client/**/*',
   js: './src/js/**/*'
 };
 

@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Element } from 'react-scroll';
 
-import { Header, Burger, Footer } from  './Navigation';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
-import Splash from './Splash';
-import Bio from './Bio';
-import WorkSamples from './WorkSamples';
-import Contact from "./Contact";
+import { NavBar, Burger, Footer } from  './components/Navigation';
+import Splash from './components/Splash';
+import Bio from './components/Bio';
+import WorkSamples from './components/WorkSamples';
+import Contact from "./components/Contact";
 
 
 class Main extends React.Component {
@@ -18,7 +20,7 @@ class Main extends React.Component {
   render() {
     return(
       <div>
-        < Header />
+        < NavBar />
         < Burger />
         < Splash />
         <div className='content-wrapper'>
@@ -42,7 +44,9 @@ class Main extends React.Component {
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    <Main />,
+    <Provider store={store}>
+      <Main />
+    </Provider>,
     document.getElementById('app')
   );
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-import { WorkSamplesContent } from './contentData';
+import { WorkSamplesContent } from '../contentData';
 
 class WorkSamples extends React.Component {
   constructor(props) {

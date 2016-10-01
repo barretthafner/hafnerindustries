@@ -1,9 +1,9 @@
 import React from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
-import { NavLinks } from './contentData';
+import { NavLinks } from '../contentData';
 import { Link, animateScroll } from 'react-scroll';
 
-class Header extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -78,4 +78,4 @@ class Footer extends React.Component {
   }
 };
 
-export { Header, Burger, Footer }
+export { NavBar, Burger, Footer }

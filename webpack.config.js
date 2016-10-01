@@ -4,14 +4,14 @@ var packageData = require('./package.json');
 var filename = ['app', 'js'];
 
 module.exports = {
-  entry: [path.resolve(__dirname, 'src/app/index.jsx')],
+  entry: [path.resolve(__dirname, 'src/client/index.jsx')],
   output: {
     filename: filename.join('.')
   },
   module: {
     loaders: [
       {
-        test: /.jsx?$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
