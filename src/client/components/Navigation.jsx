@@ -3,6 +3,9 @@ import { slide as BurgerMenu } from 'react-burger-menu';
 import { NavLinks } from '../contentData';
 import { Link, animateScroll } from 'react-scroll';
 
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -78,4 +81,20 @@ class Footer extends React.Component {
   }
 };
 
-export { NavBar, Burger, Footer }
+cconst mapStateToProps = (state) => {
+  return { state };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeLocation: () => {
+      dispatch(actions.changeLocation());
+    }
+  };
+};
+
+
+const Container = connect(mapStateToProps, mapDispatchToProps)(NavBar);
+
+export default Container
+export { Burger, Footer }

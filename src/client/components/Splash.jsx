@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Mailto from 'react-mailto';
 
-import { connect } from 'react-redux';
-import * as actions from '../actions';
-
 class Splash extends React.Component {
   constructor(props) {
     super(props);
@@ -30,14 +27,4 @@ class Splash extends React.Component {
   }
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    handleClick: (target) => {
-      dispatch(actions.clickTest(target));
-    }
-  }
-};
-
-
-const Container = connect(null, mapDispatchToProps)(Splash);
-export default Container
+export default Splash

@@ -1,4 +1,4 @@
-import * as actions from '../actions';
+import { types } from '../actions';
 import store from '../store';
 
 export default function reducer(state = {}, action) {
@@ -7,8 +7,11 @@ export default function reducer(state = {}, action) {
 
   switch (action.type) {
 
-    case actions._clickTest:
+    case types.clickTest:
       return Object.assign(state, action.payload, { clickCount: state.clickCount + 1 });
+
+    case types.changeLocation:
+      return Object.assign(state, action.payload);
 
     default:
       return state;
