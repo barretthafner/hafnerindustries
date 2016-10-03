@@ -25,6 +25,7 @@ export const WorkSamplesContent = [
     samples: [
       {
         title: "Orion",
+        imagePosition: "LEFT",
         screenshot: "./imgs/orionscreen.png",
         description: "A web app for getting things done with your friends.",
         repoLink: "https://github.com/barretthafner/orion",
@@ -86,6 +87,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "Open Bike Project",
+        imagePosition: "RIGHT",
         screenshot: "./imgs/openbikescreen.png",
         description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative <i class='fa fa-external-link' aria-hidden='true'></i></a>, a low-cost, open-source bike sharing project. Uses the Twilio messaging API to deliver combination codes to verified users.",
         repoLink: "https://github.com/barretthafner/open-bike-project",
@@ -136,6 +138,7 @@ export const WorkSamplesContent = [
     samples: [
       {
         title: "redux-quiz",
+        imagePosition: "LEFT",
         screenshot: "./imgs/reduxQuizScreen.png",
         description: "A copy of a jQuery quiz plugin I made, instead using React with Redux.",
         repoLink: "https://github.com/barretthafner/redux-quiz",
@@ -173,6 +176,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "litebox-js",
+        imagePosition: "RIGHT",
         screenshot: "./imgs/liteboxscreen.png",
         description: "A dependency-free, lightweight lightbox plugin.",
         repoLink: "https://github.com/barretthafner/litebox-js",
@@ -186,6 +190,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "todo-list-plugin",
+        imagePosition: "LEFT",
         screenshot: "./imgs/todoPluginScreen.png",
         description: "A jQuery plugin for making ToDo lists.",
         repoLink: "https://github.com/barretthafner/todo-list-plugin",
@@ -208,6 +213,7 @@ export const WorkSamplesContent = [
     samples: [
       {
         title: "pictionary",
+        imagePosition: "RIGHT",
         screenshot: "./imgs/pictionaryScreen.png",
         description: "A fun game of pictionary built with socket.io.",
         repoLink: "https://github.com/barretthafner/pictionary",
@@ -237,6 +243,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "thinkful-shopping-list",
+        imagePosition: "LEFT",
         screenshot: "./imgs/shoppingListScreen.png",
         description: "A persistant shopping list application, using jQuery.",
         repoLink: "https://github.com/barretthafner/thinkful-shopping-list",
@@ -290,6 +297,7 @@ export const WorkSamplesContent = [
       // },
       {
         title: "react-number-game",
+        imagePosition: "RIGHT",
         screenshot: "./imgs/numberGameScreen.png",
         description: "A game built in React, in which one trys to get rid of all the numbers between 1 and 9 by adding them into a randomly generated amount of stars.",
         repoLink: "https://github.com/barretthafner/react-number-game",
@@ -323,6 +331,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "rgb-guessing-game",
+        imagePosition: "LEFT",
         screenshot: "./imgs/rgbGuessingScreen.png",
         description: "A game built with pure JS DOM manipulation, in which a player tries to guess what color a certain RGB value is.",
         repoLink: "https://github.com/barretthafner/rgb-guessing-game/",
@@ -336,6 +345,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "score-keeper",
+        imagePosition: "RIGHT",
         screenshot: "./imgs/scoreKeeperScreen.png",
         description: "A simple score keeping app written with jQuery.",
         repoLink: "https://github.com/barretthafner/score-keeper",
@@ -349,6 +359,7 @@ export const WorkSamplesContent = [
       },
       {
         title: "youtube-browser",
+        imagePosition: "LEFT",
         screenshot: "./imgs/youtubeBrowserScreen.png",
         description: "A simple dependency-free app that searches the Youtube API.",
         repoLink: "https://github.com/barretthafner/youtube-browser",
