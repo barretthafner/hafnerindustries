@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Mailto from 'react-mailto';
 
 class Splash extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

@@ -1,13 +1,6 @@
 import React from 'react';
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  showSettings(event) {
-    event.preventDefault();
-  }
 
   render() {
     return (

@@ -1,52 +1,22 @@
 import React from 'react';
-import { WorkSamplesContent } from '../../seed';
 
 class WorkSamples extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
+
+    const { samples, title } = this.props;
     return (
-      <section className="container">
-        <p className="content-head is-center">Work Samples</p>
-        <ul>
-          <li className="sample-block is-center">
-            <h3>Custom Apps</h3>
-            <ul>
-
-              {WorkSamplesContent.customApps.map(function(item, index) {
-                return < Sample content={item} key={index} />
-              })}
-
-            </ul>
-          </li>
-          <li className="sample-block is-center">
-            <h3>Plugins</h3>
-            <ul>
-
-               {WorkSamplesContent.plugins.map(function(item, index) {
-                return < Sample content={item} key={index} />
-              })}
-
-            </ul>
-          </li>
-          <li className="sample-block is-center">
-            <h3>Fun Projects</h3>
-            <ul>
-
-               {WorkSamplesContent.funProjects.map(function(item, index) {
-                return < Sample content={item} key={index} />
-              })}
-
-            </ul>
-          </li>
+      <section className="container is-center">
+        <p className="content-head">{title}</p>
+        <ul className="sample-block">
+            {samples.map(function(item, index) {
+              return < Sample content={item} key={index} />
+            })}
         </ul>
       </section>
     );
   }
 };
-
 
 class Sample extends React.Component {
   constructor(props) {

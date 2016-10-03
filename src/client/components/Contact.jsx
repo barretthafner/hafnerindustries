@@ -2,9 +2,6 @@ import React from 'react';
 import Mailto from 'react-mailto';
 
 class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
