@@ -16,7 +16,7 @@ export default class ProfileApp extends Component {
       <div>
         < NavBar />
         < Burger />
-        < Splash />
+        {/*< Splash />*/}
         <div className='content-wrapper'>
           <Element name='bioScroll'>
             < Bio />
