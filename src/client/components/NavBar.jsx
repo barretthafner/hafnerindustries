@@ -1,5 +1,4 @@
 import React from 'react';
-import { slide as BurgerMenu } from 'react-burger-menu';
 import { NavLinks } from '../contentData';
 import { Link, animateScroll } from 'react-scroll';
 
@@ -63,24 +62,6 @@ class NavLink extends React.Component {
   }
 };
 
-class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  showSettings(event) {
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <div className="footer l-box is-center">
-        Copyright Hafner Industries, LLC 2016
-      </div>
-    );
-  }
-};
-
 const mapStateToProps = (state) => {
   return { state };
 };
@@ -93,8 +74,5 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-
 const Container = connect(mapStateToProps, mapDispatchToProps)(NavBar);
-
 export default Container
-export { Burger, Footer }

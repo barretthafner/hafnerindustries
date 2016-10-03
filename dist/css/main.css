@@ -44,14 +44,13 @@ a, a:visited, a:hover, a:active {
 /* General sidebar styles */
 .bm-menu {
   background: #252826;
-  padding: 2.5em 1.5em 0;
+  padding: 2.5em 0 0;
   font-size: 1.15em;
   z-index: 10 !important; }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #7f8c8d;
-  padding: 0.8em; }
+  color: #7f8c8d; }
 
 /* Styling of overlay */
 .bm-overlay {
@@ -60,6 +59,13 @@ a, a:visited, a:hover, a:active {
 
 .bm-menu-wrap {
   z-index: 10 !important; }
+
+.bm-link {
+  list-style: none;
+  padding: 1em 1em; }
+  .bm-link:hover {
+    cursor: pointer;
+    background-color: #e5e5e4; }
 
 .home-menu {
   padding: 0.5em;
