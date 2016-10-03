@@ -44,7 +44,7 @@ var paths = {
 gulp.task('default', ['build', 'watch']);
 
 // Build task
-gulp.task('build', ['clean', 'html', 'styles', 'images', 'webpack', 'js']);
+gulp.task('build', ['clean', 'html', 'styles', 'images', 'webpack']);
 
 // Watch task
 gulp.task('watch', function () {
@@ -81,7 +81,7 @@ gulp.task('styles', function () {
       cascade: false
     }))
     .pipe(gulpif(productionEnv, cleanCSS()))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/'))
     .pipe(livereload());
 });
 
@@ -93,7 +93,7 @@ gulp.task('images', function () {
     .pipe(gulpif(productionEnv, imagemin({
       optimizationLevel: 5
     })))
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('dist/imgs/'))
     .pipe(livereload());
 });
 
@@ -124,18 +124,6 @@ gulp.task('webpack', function () {
   return gulp.src(paths.app)
     .pipe(plumber())
     .pipe(webpackStream(myConfig))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/'))
     .pipe(livereload());
-});
-
-
-// Other Javascript -------------------------------------------------------------------
-
-gulp.task('js', function () {
-  return gulp.src(paths.js)
-    .pipe(plumber())
-    .pipe(gulpif(productionEnv, uglify()))
-    .pipe(gulp.dest('dist/js'))
-    .pipe(livereload());
-
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
-import { NavLinks } from '../contentData';
+import { NavLinks } from '../../seed';
 import { Link, animateScroll } from 'react-scroll';
 
 class Burger extends React.Component {

@@ -9,7 +9,7 @@ class Bio extends React.Component {
     return (
       <section className="bio l-box-lrg pure-g">
         <div className="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-          <img className="pure-img-responsive" src="img/me_circle.png"/>
+          <img className="pure-img-responsive" src="imgs/me_circle.png"/>
         </div>
         <div className="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
           <h2 className="content-head content-head-ribbon">Bio.</h2>

@@ -5,7 +5,7 @@ var packageData = require('./package.json');
 module.exports = {
   entry: [path.resolve(__dirname, 'src/client/index.jsx')],
   output: {
-    filename: 'app.js'
+    filename: 'bundle.js'
   },
   module: {
     loaders: [

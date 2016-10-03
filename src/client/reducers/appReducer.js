@@ -2,7 +2,7 @@ import { types } from '../actions';
 
 export default function reducer(state = {}, action) {
 
-  console.log('reducer called! \naction:', action.type);
+  // console.log('reducer called! \naction:', action.type);
 
   switch (action.type) {
 

@@ -2,9 +2,9 @@
   "name": "hafnerindustries",
   "version": "2.0.0",
   "description": "A portfolio website",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

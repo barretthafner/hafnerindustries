@@ -1,8 +1,8 @@
 import { createStore, compose } from 'redux';
 import { responsiveStoreEnhancer } from 'redux-responsive';
-import DevTools from './components/DevTools';
+import DevTools from '../containers/DevTools';
 
-import rootReducer from './reducers/';
+import rootReducer from '../reducers/';
 
 const initialState = {
   app: {

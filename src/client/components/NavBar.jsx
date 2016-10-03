@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLinks } from '../contentData';
+import { NavLinks } from '../../seed';
 import { Link, animateScroll } from 'react-scroll';
 
 import { connect } from 'react-redux';

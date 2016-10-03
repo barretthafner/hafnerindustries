@@ -23,7 +23,7 @@ export const WorkSamplesContent = {
   customApps: [
     {
       title: "Orion",
-      screenshot: "./img/orionscreen.png",
+      screenshot: "./imgs/orionscreen.png",
       description: "A web app for getting things done with your friends.",
       repoLink: "https://github.com/barretthafner/orion",
       // demoLink: "https://orion--app.herokuapp.com/",
@@ -84,7 +84,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "Open Bike Project",
-      screenshot: "./img/openbikescreen.png",
+      screenshot: "./imgs/openbikescreen.png",
       description: "A custom app I built for the <a href='http://openbikeinitiative.org' target='_blank'>Open Bike Initiative <i class='fa fa-external-link' aria-hidden='true'></i></a>, a low-cost, open-source bike sharing project. Uses the Twilio messaging API to deliver combination codes to verified users.",
       repoLink: "https://github.com/barretthafner/open-bike-project",
       // demoLink: "https://open-bike-project.herokuapp.com/",
@@ -131,7 +131,7 @@ export const WorkSamplesContent = {
   plugins: [
     {
       title: "redux-quiz",
-      screenshot: "./img/reduxQuizScreen.png",
+      screenshot: "./imgs/reduxQuizScreen.png",
       description: "A copy of a jQuery quiz plugin I made, instead using React with Redux.",
       repoLink: "https://github.com/barretthafner/redux-quiz",
       demoLink: "https://redux-quiz.herokuapp.com/",
@@ -168,7 +168,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "litebox-js",
-      screenshot: "./img/liteboxscreen.png",
+      screenshot: "./imgs/liteboxscreen.png",
       description: "A dependency-free, lightweight lightbox plugin.",
       repoLink: "https://github.com/barretthafner/litebox-js",
       demoLink: "http://barretthafner.github.io/litebox-js/example.html",
@@ -181,7 +181,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "todo-list-plugin",
-      screenshot: "./img/todoPluginScreen.png",
+      screenshot: "./imgs/todoPluginScreen.png",
       description: "A jQuery plugin for making ToDo lists.",
       repoLink: "https://github.com/barretthafner/todo-list-plugin",
       demoLink: "http://barretthafner.github.io/todo-list-plugin/",
@@ -200,7 +200,7 @@ export const WorkSamplesContent = {
   funProjects: [
     {
       title: "pictionary",
-      screenshot: "./img/pictionaryScreen.png",
+      screenshot: "./imgs/pictionaryScreen.png",
       description: "A fun game of pictionary built with socket.io.",
       repoLink: "https://github.com/barretthafner/pictionary",
       demoLink: "https://my-pictionary.herokuapp.com/",
@@ -229,7 +229,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "thinkful-shopping-list",
-      screenshot: "./img/shoppingListScreen.png",
+      screenshot: "./imgs/shoppingListScreen.png",
       description: "A persistant shopping list application, using jQuery.",
       repoLink: "https://github.com/barretthafner/thinkful-shopping-list",
       demoLink: "https://thinkful-shopping-list.herokuapp.com/",
@@ -282,7 +282,7 @@ export const WorkSamplesContent = {
     // },
     {
       title: "react-number-game",
-      screenshot: "./img/numberGameScreen.png",
+      screenshot: "./imgs/numberGameScreen.png",
       description: "A game built in React, in which one trys to get rid of all the numbers between 1 and 9 by adding them into a randomly generated amount of stars.",
       repoLink: "https://github.com/barretthafner/react-number-game",
       demoLink: "http://barretthafner.github.io/react-number-game/",
@@ -315,7 +315,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "rgb-guessing-game",
-      screenshot: "./img/rgbGuessingScreen.png",
+      screenshot: "./imgs/rgbGuessingScreen.png",
       description: "A game built with pure JS DOM manipulation, in which a player tries to guess what color a certain RGB value is.",
       repoLink: "https://github.com/barretthafner/rgb-guessing-game/",
       demoLink: "http://barretthafner.github.io/rgb-guessing-game/",
@@ -328,7 +328,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "score-keeper",
-      screenshot: "./img/scoreKeeperScreen.png",
+      screenshot: "./imgs/scoreKeeperScreen.png",
       description: "A simple score keeping app written with jQuery.",
       repoLink: "https://github.com/barretthafner/score-keeper",
       demoLink: "http://barretthafner.github.io/score-keeper/",
@@ -341,7 +341,7 @@ export const WorkSamplesContent = {
     },
     {
       title: "youtube-browser",
-      screenshot: "./img/youtubeBrowserScreen.png",
+      screenshot: "./imgs/youtubeBrowserScreen.png",
       description: "A simple dependency-free app that searches the Youtube API.",
       repoLink: "https://github.com/barretthafner/youtube-browser",
       demoLink: "https://youtube-browser.herokuapp.com/",
