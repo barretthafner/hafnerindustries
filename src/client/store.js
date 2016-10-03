@@ -1,10 +1,8 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, compose } from 'redux';
+import { responsiveStoreEnhancer } from 'redux-responsive';
+import DevTools from './components/DevTools';
 
-import app from './reducers/';
-
-const rootReducer = combineReducers({
-  app
-});
+import rootReducer from './reducers/';
 
 const initialState = {
   app: {
@@ -13,4 +11,11 @@ const initialState = {
   }
 };
 
-export const store = createStore(rootReducer, initialState);
+export default createStore(
+  rootReducer,
+  initialState,
+  compose(
+    responsiveStoreEnhancer,
+    DevTools.instrument()
+  )
+);

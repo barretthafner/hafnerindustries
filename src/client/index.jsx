@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Element } from 'react-scroll';
 
 import { Provider } from 'react-redux';
-import { store } from './store';
+import store from './store';
 
 import NavBar from './components/NavBar';
 import Burger from './components/BurgerMenu';
@@ -12,6 +12,9 @@ import Splash from './components/Splash';
 import Bio from './components/Bio';
 import WorkSamples from './components/WorkSamples';
 import Contact from "./components/Contact";
+
+import DevTools from './components/DevTools';
+
 
 
 class Main extends React.Component {
@@ -48,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
     <Provider store={store}>
       <Main />
+      <DevTools />
     </Provider>,
     document.getElementById('app')
   );

@@ -1,19 +1,9 @@
-import { types } from '../actions';
-import store from '../store';
+import { combineReducers } from 'redux';
+import app from './appReducer';
 
-export default function reducer(state = {}, action) {
+import {responsiveStateReducer} from 'redux-responsive'
 
-  console.log('reducer called! \naction:', action.type);
-
-  switch (action.type) {
-
-    case types.clickTest:
-      return Object.assign(state, action.payload, { clickCount: state.clickCount + 1 });
-
-    case types.changeLocation:
-      return Object.assign(state, action.payload);
-
-    default:
-      return state;
-  }
-}
+export default combineReducers({
+  app,
+  ui: responsiveStateReducer
+});
