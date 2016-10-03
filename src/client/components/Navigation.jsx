@@ -81,7 +81,7 @@ class Footer extends React.Component {
   }
 };
 
-cconst mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
   return { state };
 };
 

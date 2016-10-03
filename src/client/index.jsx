@@ -5,7 +5,8 @@ import { Element } from 'react-scroll';
 import { Provider } from 'react-redux';
 import { store } from './store';
 
-import { NavBar, Burger, Footer } from  './components/Navigation';
+import NavBar from './components/Navigation';
+import { Burger, Footer } from  './components/Navigation';
 import Splash from './components/Splash';
 import Bio from './components/Bio';
 import WorkSamples from './components/WorkSamples';

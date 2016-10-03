@@ -9,7 +9,7 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <div className="splash-container" onClick={(event) => this.props.handleClick(event.target)}>
+      <div className="splash-container">
         <div className="splash">
           <img height="200" src="img/hi_logo.svg" />
           <h3 className="splash-lead">Welcome to</h3>
