@@ -45,16 +45,14 @@ class Sample extends React.Component {
 
     const Description = (
       <div className="pure-u-lg-1-2">
-        <p className="sample-title">{content.title}</p>
-        <div>
-          <p className="description" dangerouslySetInnerHTML={{__html: content.description }}></p>
-        </div>
+        <div className="sample-title">{content.title}</div>
+        <div className="sample-description" dangerouslySetInnerHTML={{__html: content.description }} />
         <div>
           <div>
             { (() => {
                 if (content.tags) {
                   return content.tags.map((item, index) => {
-                    return ( <a className="tag" key={index} href={item.url} target="_blank">  {item.name}  </a> );
+                    return ( <div className="sample-tag" key={index}>{item.name}</div> );
                   });
                 }
               })()

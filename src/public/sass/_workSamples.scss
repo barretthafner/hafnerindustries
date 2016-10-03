@@ -5,27 +5,29 @@
   border-radius: .2em;
   padding-bottom: .5em;
 
+  &:hover {
+    cursor: default;
+  }
+
   p > a:hover {
     color: $brand-black;
   }
-  .tag {
+  .sample-tag {
     display: inline-block;
     background-color: $brand-darkgrey;
     color: $brand-white;
-    padding: .4em .7em;
+    padding: .4em .9em;
     margin: .2em;
     border-radius: .2em;
+    font-size: 1.1em;
 
-    &:hover {
-      background-color: $brand-grey;
-    }
   }
 
   .pure-button {
     font-size: 125%;
     background-color: $brand-blue;
     color: $brand-white;
-    margin: 0 .5em;
+    margin: .5em;
   }
 
   img {
@@ -61,14 +63,9 @@
     margin-bottom: 1em;
   }
 
-  .sample-subhead {
-    font-size: 1.2em;
-    color: $brand-black;
-    font-weight: 600;
-  }
-
-  .description {
+  .sample-description {
     font-size: 125%;
+    margin: 1em 0;
   }
 
   > div {
