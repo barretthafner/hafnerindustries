@@ -62,12 +62,12 @@ class Sample extends React.Component {
           </div>
         </div>
         <div>
-          <a className="pure-button pure-button-active" href={content.repoLink} target="_blank">
+          <a className="pure-button" href={content.repoLink} target="_blank">
             <i className="fa fa-github" aria-hidden="true"></i>
              &nbsp;Repo
           </a>
           { content.demoLink ?
-              <a className="pure-button pure-button-active" href={content.demoLink} target="_blank">
+              <a className="pure-button" href={content.demoLink} target="_blank">
                 <i className="fa fa-laptop" aria-hidden="true"></i>
                 &nbsp;Demo
               </a>
